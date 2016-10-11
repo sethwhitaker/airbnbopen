@@ -1,0 +1,8 @@
+{
+  "name": "airbnbopen",
+  "version": "0.1.0",
+  "directory": "www",
+  "dependencies": {
+  },
+  "private": true
+}
