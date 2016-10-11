@@ -5,11 +5,13 @@
 //Global Styles
 @import 'base/typography';
 @import 'base/base';
+@import 'base/forms';
+@import 'base/buttons';
 
 @import 'partials/header';
 @import 'partials/nav';
 @import 'partials/footer';
 
-@import 'components/home';
+@import 'components/login';
 
 @import 'vendor/animate';

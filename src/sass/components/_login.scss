@@ -1,0 +1,28 @@
+// Homepage
+
+body.login{
+	background: transparent url(/img/backgrounds/gradient-bg.jpg) top center no-repeat scroll;
+    background-size: cover;
+}
+
+.login-panel{
+    max-width: 384px;
+    margin:0 auto;
+    padding-top: 140px;
+}
+
+.login-header{
+    font-family: $font-kushan;
+    font-size: 100px;
+    color:$beach;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.logo-login{
+    position: absolute;
+    display: inline-block;
+    top: 35px;
+    left: 60px;
+}

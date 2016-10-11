@@ -24,6 +24,7 @@
 
   <!-- Custom CSS -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
   <link href="/css/styles.css" rel="stylesheet">
   <script src="/js/vendor/modernizr-2.8.3.min.js"></script>
 
@@ -33,20 +34,25 @@
 <a id="top"></a>
 <main class="wow animated fadeIn">
 
+	<a href="/" class="logo-login"><img src="/img/logo.png"></a>
+
 	<section>
 		<div class="container">
 
 
-			<div class="panel-padding panel-body signup-login-form__extra-panel-body first login-modal-content-js">
+			<div class="login-panel">
+
+				<h1 class="login-header">Welcome Back</h1>
+
 
 
 				<form accept-charset="UTF-8" action="/authenticate" class="login-form" data-action="Signin" method="post">
 
 					<div class="control-group space-1">
-						<input class="decorative-input inspectletIgnore" id="signin_email" name="email" placeholder="Email Address" type="email" value="sdw3489@gmail.com">
+						<input class="decorative-input" id="signin_email" name="email" placeholder="Email Address" type="email">
 					</div>
 				  	<div class="control-group space-2">
-						<input autofocus="autofocus" class="decorative-input inspectletIgnore" id="signin_password" name="password" placeholder="Password" type="password">
+						<input autofocus="autofocus" class="decorative-input" id="signin_password" name="password" placeholder="Password" type="password">
 					</div>
 
 					<div class="clearfix space-1">
@@ -54,7 +60,6 @@
 						<input type="checkbox" name="remember_me" id="remember_me2" value="true" class="remember_me">
 							Remember me
 						</label>
-						<a href="/forgot_password" class="forgot-password pull-right" data-from="email">Forgot password?</a>
 					 </div>
 				  <div id="airlock-inline-container"></div>
 				  <button type="submit" class="btn btn-block signup-login-form__btn-xl btn-primary btn-large" id="user-login-btn">

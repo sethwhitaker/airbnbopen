@@ -1,5 +1,10 @@
-// Homepage
 
+input, textarea, .input-prefix, .input-suffix {
+    font-family: $font-circular
+}
+label, input, textarea, select, input[type="radio"], input[type="checkbox"], .input-prefix, .input-suffix {
+    line-height: normal;
+}
 [type="text"], [type="password"], [type="search"], [type="email"], [type="url"], [type="number"], [type="tel"], textarea, select, .input-prefix, .input-suffix {
     display: block;
     padding: 8px 10px;
@@ -11,23 +16,34 @@
     -moz-transition: border-color 0.2s;
     transition: border-color 0.2s;
 }
-[type="text"], [type="password"], [type="search"], [type="email"], [type="url"], [type="number"], [type="tel"], textarea, select, input[type="radio"], input[type="checkbox"], .input-prefix, .input-suffix {
-    border: 1px solid #aaa;
+[type="text"], [type="password"], [type="search"], [type="email"], [type="url"], [type="number"], [type="tel"], textarea, select, input[type="radio"], input[type="checkbox"],
+.input-prefix, .input-suffix {
+    border: 1px solid $ebisu;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
-    background-color: #fff;
-    color: #484848;
+    background-color: $ebisu-rgb-2;
+    color: white;
 }
-input, textarea, .input-prefix, .input-suffix {
-    font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+
+::-webkit-input-placeholder {
+   color: white;
 }
-label, input, textarea, select, input[type="radio"], input[type="checkbox"], .input-prefix, .input-suffix {
-    line-height: normal;
+
+:-moz-placeholder { /* Firefox 18- */
+   color: white;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;
+}
+
+:-ms-input-placeholder {
+   color: white;
 }
 
 .decorative-input {
-    background-image: url(/img/text-field-icons.png);
+    background-image: url(/img/text-field-icons-white.png);
     background-repeat: no-repeat;
     background-position: right 9px;
     -webkit-box-sizing: border-box;
@@ -58,54 +74,4 @@ label, input, textarea, select, input[type="radio"], input[type="checkbox"], .in
 }
 #signin_password, #phone_signin_password {
     background-position: right -79px;
-}
-
-.space-1{
-	margin-bottom: 6px;
-}
-
-.space-2{
-	margin-bottom: 12px;
-}
-
-
-.btn-large {
-    padding: 9px 27px;
-    font-size: 16px;
-}
-
-.btn {
-    border-color: #c4c4c4;
-    background: white;
-    color: #484848;
-}
-.btn-primary {
-    border-color: #ff5a5f;
-    background-color: #ff5a5f;
-    color: #fff;
-}
-.btn-block {
-    display: block;
-    white-space: normal;
-    width: 100%;
-}
-.btn:hover, .btn:focus {
-    text-decoration: none;
-    border-color: #aaa;
-    color: #484848;
-}
-.btn-primary:hover, .btn-primary:focus {
-    border-color: #ff7e82;
-    background-color: #ff7e82;
-    color: #fff;
-}
-.signup-login-form__btn-xl {
-    padding-top: 20px !important;
-    padding-bottom: 20px !important;
-    padding-left: 27px !important;
-    padding-right: 27px !important;
-    font-weight: normal;
-}
-#user-login-btn {
-    padding: 20px 0;
 }

@@ -6546,6 +6546,7 @@ a.text-danger:focus, a.text-danger:hover {
 body,
 html {
   width: 100%;
+  height: 100%;
 }
 
 img {
@@ -8025,6 +8026,22 @@ img {
   }
 }
 
+.space-1 {
+  margin-bottom: 6px;
+}
+
+.space-2 {
+  margin-bottom: 12px;
+}
+
+input, textarea, .input-prefix, .input-suffix {
+  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+label, input, textarea, select, input[type="radio"], input[type="checkbox"], .input-prefix, .input-suffix {
+  line-height: normal;
+}
+
 [type="text"], [type="password"], [type="search"], [type="email"], [type="url"], [type="number"], [type="tel"], textarea, select, .input-prefix, .input-suffix {
   display: block;
   padding: 8px 10px;
@@ -8038,25 +8055,36 @@ img {
   transition: border-color 0.2s;
 }
 
-[type="text"], [type="password"], [type="search"], [type="email"], [type="url"], [type="number"], [type="tel"], textarea, select, input[type="radio"], input[type="checkbox"], .input-prefix, .input-suffix {
-  border: 1px solid #aaa;
+[type="text"], [type="password"], [type="search"], [type="email"], [type="url"], [type="number"], [type="tel"], textarea, select, input[type="radio"], input[type="checkbox"],
+.input-prefix, .input-suffix {
+  border: 1px solid #FFAA91;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  background-color: #fff;
-  color: #484848;
+  background-color: rgba(255, 170, 145, 0.2);
+  color: white;
 }
 
-input, textarea, .input-prefix, .input-suffix {
-  font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+::-webkit-input-placeholder {
+  color: white;
 }
 
-label, input, textarea, select, input[type="radio"], input[type="checkbox"], .input-prefix, .input-suffix {
-  line-height: normal;
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: white;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: white;
+}
+
+:-ms-input-placeholder {
+  color: white;
 }
 
 .decorative-input {
-  background-image: url(/img/text-field-icons.png);
+  background-image: url(/img/text-field-icons-white.png);
   background-repeat: no-repeat;
   background-position: right 9px;
   -webkit-box-sizing: border-box;
@@ -8094,14 +8122,6 @@ label, input, textarea, select, input[type="radio"], input[type="checkbox"], .in
   background-position: right -79px;
 }
 
-.space-1 {
-  margin-bottom: 6px;
-}
-
-.space-2 {
-  margin-bottom: 12px;
-}
-
 .btn-large {
   padding: 9px 27px;
   font-size: 16px;
@@ -8114,8 +8134,8 @@ label, input, textarea, select, input[type="radio"], input[type="checkbox"], .in
 }
 
 .btn-primary {
-  border-color: #ff5a5f;
-  background-color: #ff5a5f;
+  border-color: #FFB400;
+  background-color: #FFB400;
   color: #fff;
 }
 
@@ -8132,8 +8152,8 @@ label, input, textarea, select, input[type="radio"], input[type="checkbox"], .in
 }
 
 .btn-primary:hover, .btn-primary:focus {
-  border-color: #ff7e82;
-  background-color: #ff7e82;
+  border-color: #ffc333;
+  background-color: #ffc333;
   color: #fff;
 }
 
@@ -8147,6 +8167,32 @@ label, input, textarea, select, input[type="radio"], input[type="checkbox"], .in
 
 #user-login-btn {
   padding: 20px 0;
+}
+
+body.login {
+  background: transparent url(/img/backgrounds/gradient-bg.jpg) top center no-repeat scroll;
+  background-size: cover;
+}
+
+.login-panel {
+  max-width: 384px;
+  margin: 0 auto;
+  padding-top: 140px;
+}
+
+.login-header {
+  font-family: "Kaushan Script", cursive;
+  font-size: 100px;
+  color: #FFB400;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.logo-login {
+  position: absolute;
+  display: inline-block;
+  top: 35px;
+  left: 60px;
 }
 
 /*!
