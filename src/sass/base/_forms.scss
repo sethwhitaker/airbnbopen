@@ -4,7 +4,7 @@ input, textarea, .input-prefix, .input-suffix {
 }
 label, input, textarea, select, input[type="radio"], input[type="checkbox"], .input-prefix, .input-suffix {
     line-height: normal;
-}
+}/*
 [type="text"], [type="password"], [type="search"], [type="email"], [type="url"], [type="number"], [type="tel"], textarea, select, .input-prefix, .input-suffix {
     display: block;
     padding: 8px 10px;
@@ -18,13 +18,11 @@ label, input, textarea, select, input[type="radio"], input[type="checkbox"], .in
 }
 [type="text"], [type="password"], [type="search"], [type="email"], [type="url"], [type="number"], [type="tel"], textarea, select, input[type="radio"], input[type="checkbox"],
 .input-prefix, .input-suffix {
-    border: 1px solid $ebisu;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
-    background-color: $ebisu-rgb-2;
     color: white;
-}
+} */
 
 ::-webkit-input-placeholder {
    color: white;
@@ -41,24 +39,27 @@ label, input, textarea, select, input[type="radio"], input[type="checkbox"], .in
 :-ms-input-placeholder {
    color: white;
 }
-
 .decorative-input {
-    background-image: url(/img/text-field-icons-white.png);
-    background-repeat: no-repeat;
-    background-position: right 9px;
+    border:none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    // background-image: url(/img/text-field-icons-white.png);
+    // background-repeat: no-repeat;
+    // background-position: right 9px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    display: block;
-    font-size: 14px;
-    height: 40px;
+    // display: block;
+    // font-size: 14px;
+    // height: 40px;
     padding: 10px 35px 10px 10px;
     width: 100% !important;
-    -webkit-background-size: 40px 171px;
-    -moz-background-size: 40px 171px;
-    -o-background-size: 40px 171px;
-    background-size: 40px 171px;
+    // -webkit-background-size: 40px 171px;
+    // -moz-background-size: 40px 171px;
+    // -o-background-size: 40px 171px;
+    // background-size: 40px 171px;
 }
+/*
 .decorative-input[type=email] {
     background-position: right -40px;
 }
@@ -75,3 +76,4 @@ label, input, textarea, select, input[type="radio"], input[type="checkbox"], .in
 #signin_password, #phone_signin_password {
     background-position: right -79px;
 }
+ */

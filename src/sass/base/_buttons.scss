@@ -1,22 +1,12 @@
-.btn-large {
-    padding: 9px 27px;
-    font-size: 16px;
-}
-
 .btn {
     border-color: #c4c4c4;
     background: white;
     color: #484848;
 }
 .btn-primary {
-    border-color: $beach;
-    background-color: $beach;
+    border-color: $kazan;
+    background-color: $kazan;
     color: #fff;
-}
-.btn-block {
-    display: block;
-    white-space: normal;
-    width: 100%;
 }
 .btn:hover, .btn:focus {
     text-decoration: none;
@@ -24,17 +14,7 @@
     color: #484848;
 }
 .btn-primary:hover, .btn-primary:focus {
-    border-color: lighten($beach,10%);
-    background-color: lighten($beach,10%);
+    border-color: lighten($kazan,10%);
+    background-color: lighten($kazan,10%);
     color: #fff;
-}
-.signup-login-form__btn-xl {
-    padding-top: 20px !important;
-    padding-bottom: 20px !important;
-    padding-left: 27px !important;
-    padding-right: 27px !important;
-    font-weight: normal;
-}
-#user-login-btn {
-    padding: 20px 0;
 }

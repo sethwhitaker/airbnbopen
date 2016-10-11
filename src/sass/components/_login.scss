@@ -1,21 +1,18 @@
 // Homepage
 
 body.login{
-	background: transparent url(/img/backgrounds/gradient-bg.jpg) top center no-repeat scroll;
+	background: linear-gradient(135deg, lighten($babu-rgb, 20%), lighten($beach-rgb, 20%)) top center no-repeat scroll;
     background-size: cover;
 }
 
 .login-panel{
-    max-width: 384px;
-    margin:0 auto;
     padding-top: 140px;
+    max-width: 420px;
 }
 
 .login-header{
-    font-family: $font-kushan;
-    font-size: 100px;
-    color:$beach;
-    text-align: center;
+    font-size: 90px;
+    color:white;
     margin-bottom: 50px;
 }
 
@@ -26,3 +23,4 @@ body.login{
     top: 35px;
     left: 60px;
 }
+
