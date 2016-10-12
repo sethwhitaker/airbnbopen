@@ -8134,20 +8134,29 @@ body.login {
 }
 
 .login-panel {
-  padding-top: 140px;
   max-width: 420px;
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .login-panel {
+    margin-top: 200px;
+  }
 }
 
 .login-header {
-  font-size: 90px;
   color: white;
 }
 
+@media screen and (min-width: 768px) {
+  .login-header {
+    font-size: 90px;
+  }
+}
+
 .logo-login {
-  position: absolute;
   display: inline-block;
-  top: 35px;
-  left: 60px;
+  margin-top: 30px;
 }
 
 /*!
