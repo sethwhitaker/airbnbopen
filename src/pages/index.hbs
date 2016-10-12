@@ -6,7 +6,7 @@ bodyClass: "login"
 
 <main class="wow animated fadeIn">
 
-	<a href="/" class="logo-login"><img src="/img/logo.png"></a>
+	<a href="/" class="logo-login"><img src="/img/logo-login.png"></a>
 
 	<section>
 		<div class="container">
@@ -20,23 +20,23 @@ bodyClass: "login"
 
 				<form accept-charset="UTF-8" action="/authenticate" class="login-form " data-action="Signin" method="post">
 
-					<div class="control-group space-1">
+					<div class="form-group">
 						<input class="decorative-input" id="signin_email" name="email" placeholder="Email Address" type="email">
 					</div>
-				  	<div class="control-group space-2">
+				  	<div class="form-group">
 						<input autofocus="autofocus" class="decorative-input" id="signin_password" name="password" placeholder="Password" type="password">
 					</div>
 
-					<div class="clearfix space-1">
-						<label for="remember_me2" class="checkbox remember-me space-1">
-						<input type="checkbox" name="remember_me" id="remember_me2" value="true" class="remember_me">
-							Remember me
+					{{!--
+					<div class="clearfix">
+						<label for="remember_me2" class="checkbox remember-me">
+					 	<input type="checkbox" name="remember_me" id="remember_me2" value="true" class="remember_me">
+						Remember me
 						</label>
-					 </div>
-				  <div id="airlock-inline-container"></div>
-				  <button type="submit" class="btn btn-primary btn-lg" id="user-login-btn">
-					 Log in
-				  </button>
+				 	</div>
+				   <div id="airlock-inline-container"></div>
+					--}}
+				  <button type="submit" class="push-30 btn btn-secondary btn-lg" id="user-login-btn">Log in</button>
 				</form>
 			</div>
 

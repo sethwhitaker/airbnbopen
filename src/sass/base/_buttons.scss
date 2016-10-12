@@ -1,20 +1,33 @@
 .btn {
-    border-color: #c4c4c4;
-    background: white;
-    color: #484848;
+    padding: 15px 45px;
+    -webkit-border-radius: 2px;
+    -o-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
 }
+
 .btn-primary {
+    border-color: $rauch;
+    background-color: $rauch;
+    color:white;
+    &:hover, &:focus {
+        color:white;
+        border-color: lighten($rauch,7%);
+        background-color: lighten($rauch,7%);
+    }
+}
+
+.btn-secondary{
     border-color: $kazan;
     background-color: $kazan;
-    color: #fff;
+    color:white;
+    &:hover, &:focus {
+        color:white;
+        border-color: #1a8793;
+        background-color: #1a8793;
+    }
 }
-.btn:hover, .btn:focus {
-    text-decoration: none;
-    border-color: #aaa;
-    color: #484848;
-}
-.btn-primary:hover, .btn-primary:focus {
-    border-color: lighten($kazan,10%);
-    background-color: lighten($kazan,10%);
-    color: #fff;
+.btn-lg{
+    padding: 20px 60px;
+    font-size: 1.125rem;
 }
