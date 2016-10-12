@@ -8069,6 +8069,19 @@ input, textarea, .input-prefix, .input-suffix {
   font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(0, 122, 135, 0.2) inset;
+}
+
 [type="text"], [type="password"], [type="search"], [type="email"], [type="url"], [type="number"], [type="tel"], textarea, select, input[type="radio"], input[type="checkbox"] {
   -webkit-transition: border-color 0.2s;
   -o-transition: border-color 0.2s;
