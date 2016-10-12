@@ -53,5 +53,6 @@ node_modules
 .tmp
 
 ### Bower ###
-bower_components
-dist
+bower_components/
+dist/
+!www/js/vendor/*/dist/
