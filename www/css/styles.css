@@ -8655,6 +8655,7 @@ select:-webkit-autofill:focus {
   -o-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
+  border-width: 2px;
   font-family: "Circular Air Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -9120,8 +9121,16 @@ body.login {
 .gradient-beach-rausch .panel-title a {
   background: -webkit-linear-gradient(-45deg, #FFB400, #FF5A5F);
   background: -o-linear-gradient(-45deg, #FFB400, #FF5A5F);
-  background: linear-gradient(-45deg, #FFB400), #FF5A5F;
+  background: linear-gradient(-45deg, #FFB400, #FF5A5F);
   background-size: 250%;
+}
+
+.gradient-babu-beach .panel-title a.collapsed {
+  background: #00D1C1;
+}
+
+.gradient-beach-rausch .panel-title a.collapsed {
+  background: #FF5A5F;
 }
 
 .panel-title a:hover, .panel-title a:active {

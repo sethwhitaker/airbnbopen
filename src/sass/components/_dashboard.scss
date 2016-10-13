@@ -18,10 +18,6 @@
 	padding: 50px 0;
 	@include media-breakpoint-up(md) {
 		padding-top: 210px;
-
-	}
-	@include media-breakpoint-up(xl) {
-		// padding-left:100px;
 	}
 	h1{
 		font-size: 4.375rem;
@@ -59,8 +55,16 @@
       .gradient-beach-rausch &{
       	background: -webkit-linear-gradient(-45deg, $beach, $rausch);
 		   background: -o-linear-gradient(-45deg, $beach, $rausch);
-	      background: linear-gradient(-45deg, $beach), $rausch;
+	      background: linear-gradient(-45deg, $beach, $rausch);
       	background-size: 250%;
+      }
+      &.collapsed{
+      	.gradient-babu-beach &{
+			   background: $babu;
+	      }
+	      .gradient-beach-rausch &{
+	      	background: $rausch;
+	      }
       }
       &:hover,
       &:active{
