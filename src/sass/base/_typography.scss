@@ -4,61 +4,103 @@
   font-family: "AirbnbOpenPalace";
   src:url("../fonts/AirbnbOpenPalace.otf") format("opentype");
 }
+@font-face{
+  font-family: "AirbnbOpenGlobe";
+  src:url("../fonts/AirbnbOpenGlobe.otf") format("opentype");
+}
+@font-face{
+  font-family: "AirbnbOpenMarquee";
+  src:url("../fonts/AirbnbOpenMarquee.otf") format("opentype");
+}
+@font-face{
+  font-family: "AirbnbOpenOrpheum";
+  src:url("../fonts/AirbnbOpenOrpheum.otf") format("opentype");
+}
+@font-face{
+  font-family: 'AirbnbOpenStreetMarkingsClean';
+  src:url("../fonts/AirbnbOpenStreetMarkingsClean.otf") format("opentype");
+}
+@font-face{
+  font-family: 'AirbnbOpenStreetMarkingsGrunge';
+  src:url("../fonts/AirbnbOpenStreetMarkingsGrunge.otf") format("opentype");
+}
 
 @font-face{
   font-family: 'Circular Air Black';
-  src:url("../fonts/CircularAirBlack.opentype") format("otf"),
+  src:url("../fonts/CircularAirBlack.otf") format("opentype"),
   		url("../fonts/CircularAirBlack.ttf") format("truetype");
 }
 
 @font-face{
   font-family: 'Circular Air Bold';
-  src:url("../fonts/CircularAirBold.opentype") format("otf"),
+  src:url("../fonts/CircularAirBold.otf") format("opentype"),
   		url("../fonts/CircularAirBold.ttf") format("truetype");
 }
 
 @font-face{
   font-family: 'Circular Air Medium';
-  src:url("../fonts/CircularAirMedium.opentype") format("otf"),
+  src:url("../fonts/CircularAirMedium.otf") format("opentype"),
   		url("../fonts/CircularAirMedium.ttf") format("truetype");
 }
 
 @font-face{
   font-family: 'Circular Air Book';
-  src:url("../fonts/CircularAirBook.opentype") format("otf"),
+  src:url("../fonts/CircularAirBook.otf") format("opentype"),
   		url("../fonts/CircularAirBook.ttf") format("truetype");
 }
 
 @font-face{
   font-family: 'Circular Air Light';
-  src:url("../fonts/CircularAirLight.opentype") format("otf"),
-  		url("../fonts/CircularAirLight.ttf") format("truetype");
+  src:url("../fonts/CircularAirLight.otf") format("opentype"),
+      url("../fonts/CircularAirLight.ttf") format("truetype");
 }
 
 
-.circular-black{
+
+.font-circular-black{
 	font-family: 'Circular Air Black';
 }
 
-.circular-bold{
+.font-circular-bold{
 	font-family: 'Circular Air Bold';
 }
 
-.circular-medium{
+.font-circular-medium{
 	font-family: 'Circular Air Medium';
 }
 
-.circular-book{
+.font-circular-book{
 	font-family: 'Circular Air Book';
 }
 
-.circular-light{
+.font-circular-light{
 	font-family: 'Circular Air Light';
 }
 
-.palace{
+.font-palace{
 	font-family: "AirbnbOpenPalace";
 }
-.kushan{
-	font-family: 'Kaushan Script', cursive;
+.font-globe{
+  font-family: "AirbnbOpenGlobe";
+}
+.font-marquee{
+  font-family: "AirbnbOpenMarquee";
+}
+.font-orpheum{
+  font-family: "AirbnbOpenOrpheum";
+}
+.font-street-markings-grunge{
+  font-family: "AirbnbOpenStreetMarkingsGrunge";
+}
+.font-street-markings-clean{
+  font-family: "AirbnbOpenStreetMarkingsClean";
+}
+
+.font-gradient{
+  background: -webkit-linear-gradient(135deg, $babu, $beach);
+  background: -0-linear-gradient(135deg, $babu, $beach);
+  background: linear-gradient(135deg, $babu, $beach);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }

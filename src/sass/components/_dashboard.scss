@@ -1,0 +1,32 @@
+//Dashboard
+
+.panel{
+
+}
+.panel-default{
+
+}
+.panel-heading{
+
+}
+.panel-title{
+	a{
+		display: block;
+		padding:30px;
+		color:white;
+		text-align: center;
+	   background: -webkit-linear-gradient(135deg, $babu, $beach);
+	   background: -o-linear-gradient(135deg, $babu, $beach);
+      background: linear-gradient(135deg, $babu, $beach);
+      background-size: 250%;
+      &:hover{
+      	text-decoration: none;
+      }
+	}
+}
+.panel-collapse.collapse{
+
+	&.in{
+
+	}
+}
