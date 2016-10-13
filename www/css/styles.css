@@ -6540,12 +6540,48 @@ a.text-danger:focus, a.text-danger:hover {
 }
 
 @font-face {
-  font-family: Circular;
+  font-family: 'Circular Air Black';
+  src: url("../fonts/CircularAirBlack.opentype") format("otf"), url("../fonts/CircularAirBlack.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Circular Air Bold';
+  src: url("../fonts/CircularAirBold.opentype") format("otf"), url("../fonts/CircularAirBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Circular Air Medium';
+  src: url("../fonts/CircularAirMedium.opentype") format("otf"), url("../fonts/CircularAirMedium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Circular Air Book';
   src: url("../fonts/CircularAirBook.opentype") format("otf"), url("../fonts/CircularAirBook.ttf") format("truetype");
 }
 
-.circular {
-  font-family: Circular;
+@font-face {
+  font-family: 'Circular Air Light';
+  src: url("../fonts/CircularAirLight.opentype") format("otf"), url("../fonts/CircularAirLight.ttf") format("truetype");
+}
+
+.circular-black {
+  font-family: 'Circular Air Black';
+}
+
+.circular-bold {
+  font-family: 'Circular Air Bold';
+}
+
+.circular-medium {
+  font-family: 'Circular Air Medium';
+}
+
+.circular-book {
+  font-family: 'Circular Air Book';
+}
+
+.circular-light {
+  font-family: 'Circular Air Light';
 }
 
 .palace {
@@ -6560,6 +6596,7 @@ body,
 html {
   width: 100%;
   height: 100%;
+  font-family: "Circular Air Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 img {
@@ -7151,6 +7188,449 @@ img {
 
 .pad-r-200 {
   padding-right: 200px;
+}
+
+@media screen and (min-width: 544px) {
+  .pull-sm-10 {
+    margin-top: -10px;
+    padding-top: 10px;
+  }
+  .push-sm-10 {
+    margin-top: 10px;
+  }
+  .shove-sm-10 {
+    margin-bottom: 10px;
+  }
+  .pad-sm-b-10 {
+    padding-bottom: 10px;
+  }
+  .pad-sm-t-10 {
+    padding-top: 10px;
+  }
+  .pad-sm-l-10 {
+    padding-left: 10px;
+  }
+  .pad-sm-r-10 {
+    padding-right: 10px;
+  }
+  .pull-sm-20 {
+    margin-top: -20px;
+    padding-top: 20px;
+  }
+  .push-sm-20 {
+    margin-top: 20px;
+  }
+  .shove-sm-20 {
+    margin-bottom: 20px;
+  }
+  .pad-sm-b-20 {
+    padding-bottom: 20px;
+  }
+  .pad-sm-t-20 {
+    padding-top: 20px;
+  }
+  .pad-sm-l-20 {
+    padding-left: 20px;
+  }
+  .pad-sm-r-20 {
+    padding-right: 20px;
+  }
+  .pull-sm-30 {
+    margin-top: -30px;
+    padding-top: 30px;
+  }
+  .push-sm-30 {
+    margin-top: 30px;
+  }
+  .shove-sm-30 {
+    margin-bottom: 30px;
+  }
+  .pad-sm-b-30 {
+    padding-bottom: 30px;
+  }
+  .pad-sm-t-30 {
+    padding-top: 30px;
+  }
+  .pad-sm-l-30 {
+    padding-left: 30px;
+  }
+  .pad-sm-r-30 {
+    padding-right: 30px;
+  }
+  .pull-sm-40 {
+    margin-top: -40px;
+    padding-top: 40px;
+  }
+  .push-sm-40 {
+    margin-top: 40px;
+  }
+  .shove-sm-40 {
+    margin-bottom: 40px;
+  }
+  .pad-sm-b-40 {
+    padding-bottom: 40px;
+  }
+  .pad-sm-t-40 {
+    padding-top: 40px;
+  }
+  .pad-sm-l-40 {
+    padding-left: 40px;
+  }
+  .pad-sm-r-40 {
+    padding-right: 40px;
+  }
+  .pull-sm-50 {
+    margin-top: -50px;
+    padding-top: 50px;
+  }
+  .push-sm-50 {
+    margin-top: 50px;
+  }
+  .shove-sm-50 {
+    margin-bottom: 50px;
+  }
+  .pad-sm-b-50 {
+    padding-bottom: 50px;
+  }
+  .pad-sm-t-50 {
+    padding-top: 50px;
+  }
+  .pad-sm-l-50 {
+    padding-left: 50px;
+  }
+  .pad-sm-r-50 {
+    padding-right: 50px;
+  }
+  .pull-sm-60 {
+    margin-top: -60px;
+    padding-top: 60px;
+  }
+  .push-sm-60 {
+    margin-top: 60px;
+  }
+  .shove-sm-60 {
+    margin-bottom: 60px;
+  }
+  .pad-sm-b-60 {
+    padding-bottom: 60px;
+  }
+  .pad-sm-t-60 {
+    padding-top: 60px;
+  }
+  .pad-sm-l-60 {
+    padding-left: 60px;
+  }
+  .pad-sm-r-60 {
+    padding-right: 60px;
+  }
+  .pull-sm-70 {
+    margin-top: -70px;
+    padding-top: 70px;
+  }
+  .push-sm-70 {
+    margin-top: 70px;
+  }
+  .shove-sm-70 {
+    margin-bottom: 70px;
+  }
+  .pad-sm-b-70 {
+    padding-bottom: 70px;
+  }
+  .pad-sm-t-70 {
+    padding-top: 70px;
+  }
+  .pad-sm-l-70 {
+    padding-left: 70px;
+  }
+  .pad-sm-r-70 {
+    padding-right: 70px;
+  }
+  .pull-sm-80 {
+    margin-top: -80px;
+    padding-top: 80px;
+  }
+  .push-sm-80 {
+    margin-top: 80px;
+  }
+  .shove-sm-80 {
+    margin-bottom: 80px;
+  }
+  .pad-sm-b-80 {
+    padding-bottom: 80px;
+  }
+  .pad-sm-t-80 {
+    padding-top: 80px;
+  }
+  .pad-sm-l-80 {
+    padding-left: 80px;
+  }
+  .pad-sm-r-80 {
+    padding-right: 80px;
+  }
+  .pull-sm-90 {
+    margin-top: -90px;
+    padding-top: 90px;
+  }
+  .push-sm-90 {
+    margin-top: 90px;
+  }
+  .shove-sm-90 {
+    margin-bottom: 90px;
+  }
+  .pad-sm-b-90 {
+    padding-bottom: 90px;
+  }
+  .pad-sm-t-90 {
+    padding-top: 90px;
+  }
+  .pad-sm-l-90 {
+    padding-left: 90px;
+  }
+  .pad-sm-r-90 {
+    padding-right: 90px;
+  }
+  .pull-sm-100 {
+    margin-top: -100px;
+    padding-top: 100px;
+  }
+  .push-sm-100 {
+    margin-top: 100px;
+  }
+  .shove-sm-100 {
+    margin-bottom: 100px;
+  }
+  .pad-sm-b-100 {
+    padding-bottom: 100px;
+  }
+  .pad-sm-t-100 {
+    padding-top: 100px;
+  }
+  .pad-sm-l-100 {
+    padding-left: 100px;
+  }
+  .pad-sm-r-100 {
+    padding-right: 100px;
+  }
+  .pull-sm-110 {
+    margin-top: -110px;
+    padding-top: 110px;
+  }
+  .push-sm-110 {
+    margin-top: 110px;
+  }
+  .shove-sm-110 {
+    margin-bottom: 110px;
+  }
+  .pad-sm-b-110 {
+    padding-bottom: 110px;
+  }
+  .pad-sm-t-110 {
+    padding-top: 110px;
+  }
+  .pad-sm-l-110 {
+    padding-left: 110px;
+  }
+  .pad-sm-r-110 {
+    padding-right: 110px;
+  }
+  .pull-sm-120 {
+    margin-top: -120px;
+    padding-top: 120px;
+  }
+  .push-sm-120 {
+    margin-top: 120px;
+  }
+  .shove-sm-120 {
+    margin-bottom: 120px;
+  }
+  .pad-sm-b-120 {
+    padding-bottom: 120px;
+  }
+  .pad-sm-t-120 {
+    padding-top: 120px;
+  }
+  .pad-sm-l-120 {
+    padding-left: 120px;
+  }
+  .pad-sm-r-120 {
+    padding-right: 120px;
+  }
+  .pull-sm-130 {
+    margin-top: -130px;
+    padding-top: 130px;
+  }
+  .push-sm-130 {
+    margin-top: 130px;
+  }
+  .shove-sm-130 {
+    margin-bottom: 130px;
+  }
+  .pad-sm-b-130 {
+    padding-bottom: 130px;
+  }
+  .pad-sm-t-130 {
+    padding-top: 130px;
+  }
+  .pad-sm-l-130 {
+    padding-left: 130px;
+  }
+  .pad-sm-r-130 {
+    padding-right: 130px;
+  }
+  .pull-sm-140 {
+    margin-top: -140px;
+    padding-top: 140px;
+  }
+  .push-sm-140 {
+    margin-top: 140px;
+  }
+  .shove-sm-140 {
+    margin-bottom: 140px;
+  }
+  .pad-sm-b-140 {
+    padding-bottom: 140px;
+  }
+  .pad-sm-t-140 {
+    padding-top: 140px;
+  }
+  .pad-sm-l-140 {
+    padding-left: 140px;
+  }
+  .pad-sm-r-140 {
+    padding-right: 140px;
+  }
+  .pull-sm-150 {
+    margin-top: -150px;
+    padding-top: 150px;
+  }
+  .push-sm-150 {
+    margin-top: 150px;
+  }
+  .shove-sm-150 {
+    margin-bottom: 150px;
+  }
+  .pad-sm-b-150 {
+    padding-bottom: 150px;
+  }
+  .pad-sm-t-150 {
+    padding-top: 150px;
+  }
+  .pad-sm-l-150 {
+    padding-left: 150px;
+  }
+  .pad-sm-r-150 {
+    padding-right: 150px;
+  }
+  .pull-sm-160 {
+    margin-top: -160px;
+    padding-top: 160px;
+  }
+  .push-sm-160 {
+    margin-top: 160px;
+  }
+  .shove-sm-160 {
+    margin-bottom: 160px;
+  }
+  .pad-sm-b-160 {
+    padding-bottom: 160px;
+  }
+  .pad-sm-t-160 {
+    padding-top: 160px;
+  }
+  .pad-sm-l-160 {
+    padding-left: 160px;
+  }
+  .pad-sm-r-160 {
+    padding-right: 160px;
+  }
+  .pull-sm-170 {
+    margin-top: -170px;
+    padding-top: 170px;
+  }
+  .push-sm-170 {
+    margin-top: 170px;
+  }
+  .shove-sm-170 {
+    margin-bottom: 170px;
+  }
+  .pad-sm-b-170 {
+    padding-bottom: 170px;
+  }
+  .pad-sm-t-170 {
+    padding-top: 170px;
+  }
+  .pad-sm-l-170 {
+    padding-left: 170px;
+  }
+  .pad-sm-r-170 {
+    padding-right: 170px;
+  }
+  .pull-sm-180 {
+    margin-top: -180px;
+    padding-top: 180px;
+  }
+  .push-sm-180 {
+    margin-top: 180px;
+  }
+  .shove-sm-180 {
+    margin-bottom: 180px;
+  }
+  .pad-sm-b-180 {
+    padding-bottom: 180px;
+  }
+  .pad-sm-t-180 {
+    padding-top: 180px;
+  }
+  .pad-sm-l-180 {
+    padding-left: 180px;
+  }
+  .pad-sm-r-180 {
+    padding-right: 180px;
+  }
+  .pull-sm-190 {
+    margin-top: -190px;
+    padding-top: 190px;
+  }
+  .push-sm-190 {
+    margin-top: 190px;
+  }
+  .shove-sm-190 {
+    margin-bottom: 190px;
+  }
+  .pad-sm-b-190 {
+    padding-bottom: 190px;
+  }
+  .pad-sm-t-190 {
+    padding-top: 190px;
+  }
+  .pad-sm-l-190 {
+    padding-left: 190px;
+  }
+  .pad-sm-r-190 {
+    padding-right: 190px;
+  }
+  .pull-sm-200 {
+    margin-top: -200px;
+    padding-top: 200px;
+  }
+  .push-sm-200 {
+    margin-top: 200px;
+  }
+  .shove-sm-200 {
+    margin-bottom: 200px;
+  }
+  .pad-sm-b-200 {
+    padding-bottom: 200px;
+  }
+  .pad-sm-t-200 {
+    padding-top: 200px;
+  }
+  .pad-sm-l-200 {
+    padding-left: 200px;
+  }
+  .pad-sm-r-200 {
+    padding-right: 200px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -8047,6 +8527,10 @@ img {
   margin-bottom: 12px;
 }
 
+.lead {
+  font-size: 1.125rem;
+}
+
 ::-webkit-input-placeholder {
   color: white;
 }
@@ -8066,7 +8550,7 @@ img {
 }
 
 input, textarea, .input-prefix, .input-suffix {
-  font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Circular Air Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* Change Autocomplete styles in Chrome*/
@@ -8105,11 +8589,12 @@ select:-webkit-autofill:focus {
 }
 
 .btn {
-  padding: 15px 45px;
+  padding: 12px 50px;
   -webkit-border-radius: 2px;
   -o-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
+  font-family: "Circular Air Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .btn-primary {
@@ -8120,8 +8605,8 @@ select:-webkit-autofill:focus {
 
 .btn-primary:hover, .btn-primary:focus {
   color: white;
-  border-color: #ff7e82;
-  background-color: #ff7e82;
+  border-color: #f4767b;
+  background-color: #f4767b;
 }
 
 .btn-secondary {
@@ -8139,6 +8624,231 @@ select:-webkit-autofill:focus {
 .btn-lg, .btn-group-lg > .btn {
   padding: 20px 60px;
   font-size: 1.125rem;
+}
+
+.btn-hackberry {
+  color: white;
+  background-color: #7B0051;
+  border-color: #7B0051;
+}
+
+.btn-hackberry:hover {
+  color: white;
+  border-color: #810e5a;
+  background-color: #810e5a;
+}
+
+.btn-kazan {
+  color: white;
+  background-color: #007A87;
+  border-color: #007A87;
+}
+
+.btn-kazan:hover {
+  color: white;
+  border-color: #10808c;
+  background-color: #10808c;
+}
+
+.btn-babu {
+  color: white;
+  background-color: #00D1C1;
+  border-color: #00D1C1;
+}
+
+.btn-babu:hover {
+  color: white;
+  border-color: #17cec0;
+  background-color: #17cec0;
+}
+
+.btn-lima {
+  color: white;
+  background-color: #8CE071;
+  border-color: #8CE071;
+}
+
+.btn-lima:hover {
+  color: white;
+  border-color: #a1d491;
+  background-color: #a1d491;
+}
+
+.btn-beach {
+  color: white;
+  background-color: #FFB400;
+  border-color: #FFB400;
+}
+
+.btn-beach:hover {
+  color: white;
+  border-color: #e8b02c;
+  background-color: #e8b02c;
+}
+
+.btn-ebisu {
+  color: white;
+  background-color: #FFAA91;
+  border-color: #FFAA91;
+}
+
+.btn-ebisu:hover {
+  color: white;
+  border-color: #f6bfae;
+  background-color: #f6bfae;
+}
+
+.btn-rauch {
+  color: white;
+  background-color: #FF5A5F;
+  border-color: #FF5A5F;
+}
+
+.btn-rauch:hover {
+  color: white;
+  border-color: #f17d80;
+  background-color: #f17d80;
+}
+
+.btn-tirol {
+  color: white;
+  background-color: #B4A76C;
+  border-color: #B4A76C;
+}
+
+.btn-tirol:hover {
+  color: white;
+  border-color: #a7a28e;
+  background-color: #a7a28e;
+}
+
+.btn-foggy {
+  color: white;
+  background-color: #9CA299;
+  border-color: #9CA299;
+}
+
+.btn-foggy:hover {
+  color: white;
+  border-color: #a8a8a8;
+  background-color: #a8a8a8;
+}
+
+.btn-hof {
+  color: white;
+  background-color: #565A5C;
+  border-color: #565A5C;
+}
+
+.btn-hof:hover {
+  color: white;
+  border-color: #636363;
+  background-color: #636363;
+}
+
+.btn-outline-hackberry {
+  color: #7B0051;
+  border: 2px solid #7B0051;
+}
+
+.btn-outline-hackberry:hover {
+  color: white;
+  background-color: #7B0051;
+}
+
+.btn-outline-kazan {
+  color: #007A87;
+  border: 2px solid #007A87;
+}
+
+.btn-outline-kazan:hover {
+  color: white;
+  background-color: #007A87;
+}
+
+.btn-outline-babu {
+  color: #00D1C1;
+  border: 2px solid #00D1C1;
+}
+
+.btn-outline-babu:hover {
+  color: white;
+  background-color: #00D1C1;
+}
+
+.btn-outline-lima {
+  color: #8CE071;
+  border: 2px solid #8CE071;
+}
+
+.btn-outline-lima:hover {
+  color: white;
+  background-color: #8CE071;
+}
+
+.btn-outline-beach {
+  color: #FFB400;
+  border: 2px solid #FFB400;
+}
+
+.btn-outline-beach:hover {
+  color: white;
+  background-color: #FFB400;
+}
+
+.btn-outline-ebisu {
+  color: #FFAA91;
+  border: 2px solid #FFAA91;
+}
+
+.btn-outline-ebisu:hover {
+  color: white;
+  background-color: #FFAA91;
+}
+
+.btn-outline-rauch {
+  color: #FF5A5F;
+  border: 2px solid #FF5A5F;
+}
+
+.btn-outline-rauch:hover {
+  color: white;
+  background-color: #FF5A5F;
+}
+
+.btn-outline-tirol {
+  color: #B4A76C;
+  border: 2px solid #B4A76C;
+}
+
+.btn-outline-tirol:hover {
+  color: white;
+  background-color: #B4A76C;
+}
+
+.btn-outline-foggy {
+  color: #9CA299;
+  border: 2px solid #9CA299;
+}
+
+.btn-outline-foggy:hover {
+  color: white;
+  background-color: #9CA299;
+}
+
+.btn-outline-hof {
+  color: #565A5C;
+  border: 2px solid #565A5C;
+}
+
+.btn-outline-hof:hover {
+  color: white;
+  background-color: #565A5C;
+}
+
+.header {
+  border-bottom: 1px solid #979797;
+  padding: 30px 0;
 }
 
 body.login {
@@ -8170,6 +8880,62 @@ body.login {
 .logo-login {
   display: inline-block;
   margin-top: 30px;
+}
+
+.lined-heading {
+  font-family: "Circular Air Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2.75rem;
+}
+
+.lined-heading:after {
+  display: block;
+  width: 51px;
+  height: 5px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  content: '';
+  border-radius: 2.5px;
+  background: #323d32;
+}
+
+.event-category {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: "Circular Air Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.event-intro {
+  margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+  .event-intro {
+    margin-top: 120px;
+  }
+}
+
+.event-details {
+  font-family: "Circular Air Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.back-arrow {
+  font-size: 50px;
+  color: #00D1C1;
+  margin-bottom: 20px;
+  margin-left: -15px;
+}
+
+.back-arrow:hover {
+  color: #00e5d4;
+}
+
+.event-cta-btn {
+  margin-right: 30px;
+  float: left;
+}
+
+.event-cta-btn + .event-cta-btn {
+  margin-right: 0px;
 }
 
 /*!

@@ -6,14 +6,56 @@
 }
 
 @font-face{
-  font-family: Circular;
+  font-family: 'Circular Air Black';
+  src:url("../fonts/CircularAirBlack.opentype") format("otf"),
+  		url("../fonts/CircularAirBlack.ttf") format("truetype");
+}
+
+@font-face{
+  font-family: 'Circular Air Bold';
+  src:url("../fonts/CircularAirBold.opentype") format("otf"),
+  		url("../fonts/CircularAirBold.ttf") format("truetype");
+}
+
+@font-face{
+  font-family: 'Circular Air Medium';
+  src:url("../fonts/CircularAirMedium.opentype") format("otf"),
+  		url("../fonts/CircularAirMedium.ttf") format("truetype");
+}
+
+@font-face{
+  font-family: 'Circular Air Book';
   src:url("../fonts/CircularAirBook.opentype") format("otf"),
   		url("../fonts/CircularAirBook.ttf") format("truetype");
 }
 
-.circular{
-	font-family: Circular;
+@font-face{
+  font-family: 'Circular Air Light';
+  src:url("../fonts/CircularAirLight.opentype") format("otf"),
+  		url("../fonts/CircularAirLight.ttf") format("truetype");
 }
+
+
+.circular-black{
+	font-family: 'Circular Air Black';
+}
+
+.circular-bold{
+	font-family: 'Circular Air Bold';
+}
+
+.circular-medium{
+	font-family: 'Circular Air Medium';
+}
+
+.circular-book{
+	font-family: 'Circular Air Book';
+}
+
+.circular-light{
+	font-family: 'Circular Air Light';
+}
+
 .palace{
 	font-family: "AirbnbOpenPalace";
 }
