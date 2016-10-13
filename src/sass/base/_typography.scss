@@ -97,10 +97,19 @@
 }
 
 .font-gradient{
-  background: -webkit-linear-gradient(135deg, $babu, $beach);
-  background: -0-linear-gradient(135deg, $babu, $beach);
-  background: linear-gradient(135deg, $babu, $beach);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   display: inline-block;
+  .gradient-babu-beach &{
+    background: -webkit-linear-gradient(135deg, $babu, $beach);
+    background: -0-linear-gradient(135deg, $babu, $beach);
+    background: linear-gradient(135deg, $babu, $beach);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .gradient-beach-rausch &{
+    background: -webkit-linear-gradient(135deg, $beach, $rausch);
+    background: -0-linear-gradient(135deg, $beach, $rausch);
+    background: linear-gradient(135deg, $beach, $rausch);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }

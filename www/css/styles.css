@@ -6634,12 +6634,23 @@ a.text-danger:focus, a.text-danger:hover {
 }
 
 .font-gradient {
+  display: inline-block;
+}
+
+.gradient-babu-beach .font-gradient {
   background: -webkit-linear-gradient(135deg, #00D1C1, #FFB400);
   background: 0-linear-gradient 135deg, #00D1C1, #FFB400;
   background: linear-gradient(135deg, #00D1C1, #FFB400);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  display: inline-block;
+}
+
+.gradient-beach-rausch .font-gradient {
+  background: -webkit-linear-gradient(135deg, #FFB400, #FF5A5F);
+  background: 0-linear-gradient 135deg, #FFB400, #FF5A5F;
+  background: linear-gradient(135deg, #FFB400, #FF5A5F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 body,
@@ -8796,6 +8807,30 @@ select:-webkit-autofill:focus {
   background-color: #636363;
 }
 
+.btn-white {
+  color: white;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.btn-white:hover {
+  color: white;
+  border-color: white;
+  background-color: white;
+}
+
+.btn-black {
+  color: white;
+  background-color: #000000;
+  border-color: #000000;
+}
+
+.btn-black:hover {
+  color: white;
+  border-color: #0a0a0a;
+  background-color: #0a0a0a;
+}
+
 .btn-outline-hackberry {
   color: #7B0051;
   border: 2px solid #7B0051;
@@ -8896,6 +8931,26 @@ select:-webkit-autofill:focus {
   background-color: #565A5C;
 }
 
+.btn-outline-white {
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.btn-outline-white:hover {
+  color: white;
+  background-color: #ffffff;
+}
+
+.btn-outline-black {
+  color: #000000;
+  border: 2px solid #000000;
+}
+
+.btn-outline-black:hover {
+  color: white;
+  background-color: #000000;
+}
+
 .header {
   border-bottom: 1px solid #979797;
   padding: 30px 0;
@@ -8988,19 +9043,68 @@ body.login {
   margin-right: 0px;
 }
 
+.dashboard-intro {
+  background: #2b011c url(/img/backgrounds/dashboard-background.jpg) center center repeat-x scroll;
+  min-height: 515px;
+  color: white;
+}
+
+.dashboard-intro-content {
+  padding-top: 125px;
+  padding-left: 100px;
+}
+
+.dashboard-heading {
+  margin: 125px 0 70px;
+}
+
+.events-list {
+  padding: 30px 0;
+}
+
+.panel {
+  margin-bottom: 50px;
+}
+
+.panel-title {
+  margin: 0;
+}
+
 .panel-title a {
   display: block;
-  padding: 30px;
+  padding: 20px;
   color: white;
   text-align: center;
+  position: relative;
+}
+
+.gradient-babu-beach .panel-title a {
   background: -webkit-linear-gradient(135deg, #00D1C1, #FFB400);
   background: -o-linear-gradient(135deg, #00D1C1, #FFB400);
   background: linear-gradient(135deg, #00D1C1, #FFB400);
   background-size: 250%;
 }
 
-.panel-title a:hover {
+.gradient-beach-rausch .panel-title a {
+  background: -webkit-linear-gradient(-45deg, #FFB400, #FF5A5F);
+  background: -o-linear-gradient(-45deg, #FFB400, #FF5A5F);
+  background: linear-gradient(-45deg, #FFB400), #FF5A5F;
+  background-size: 250%;
+}
+
+.panel-title a:hover, .panel-title a:active {
   text-decoration: none;
+}
+
+.panel-title a .material-icons {
+  position: absolute;
+  right: 35px;
+  font-size: 40px;
+  line-height: 0.75;
+}
+
+.panel-title a.collapsed .expand-more {
+  transform: rotate(180deg);
 }
 
 /*!

@@ -1,32 +1,62 @@
 //Dashboard
+.dashboard-intro{
+	background: #2b011c url(/img/backgrounds/dashboard-background.jpg) center center repeat-x scroll;
+	min-height: 515px;
+	color:white;
+}
+.dashboard-intro-content{
+	padding-top: 125px;
+	padding-left:100px;
+}
+.dashboard-heading{
+	margin:125px 0 70px;
+}
+.events-list{
+	padding:30px 0;
+}
+.event{
 
+}
+
+// Bootstrap Panel Overrides
 .panel{
-
-}
-.panel-default{
-
-}
-.panel-heading{
-
+	margin-bottom: 50px;
 }
 .panel-title{
+	margin:0;
 	a{
 		display: block;
-		padding:30px;
+		padding:20px;
 		color:white;
 		text-align: center;
-	   background: -webkit-linear-gradient(135deg, $babu, $beach);
-	   background: -o-linear-gradient(135deg, $babu, $beach);
-      background: linear-gradient(135deg, $babu, $beach);
-      background-size: 250%;
-      &:hover{
+      position: relative;
+      .gradient-babu-beach &{
+		   background: -webkit-linear-gradient(135deg, $babu, $beach);
+		   background: -o-linear-gradient(135deg, $babu, $beach);
+	      background: linear-gradient(135deg, $babu, $beach);
+      	background-size: 250%;
+      }
+      .gradient-beach-rausch &{
+      	background: -webkit-linear-gradient(-45deg, $beach, $rausch);
+		   background: -o-linear-gradient(-45deg, $beach, $rausch);
+	      background: linear-gradient(-45deg, $beach), $rausch;
+      	background-size: 250%;
+      }
+      &:hover,
+      &:active{
       	text-decoration: none;
       }
-	}
-}
-.panel-collapse.collapse{
-
-	&.in{
+		.material-icons{
+			position: absolute;
+			right:35px;
+			font-size: 40px;
+			line-height: 0.75;
+		}
+      &.collapsed{
+			.expand-more{
+				transform: rotate(180deg);
+			}
+      }
 
 	}
 }
