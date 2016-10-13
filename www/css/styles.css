@@ -9065,6 +9065,12 @@ body.login {
   }
 }
 
+@media (min-width: 1200px) {
+  .dashboard-intro {
+    background: #2b011c url(/img/backgrounds/dashboard-xl.jpg) center center repeat-x scroll;
+  }
+}
+
 .dashboard-intro-content {
   padding: 50px 0;
 }
@@ -9072,12 +9078,6 @@ body.login {
 @media (min-width: 768px) {
   .dashboard-intro-content {
     padding-top: 210px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .dashboard-intro-content {
-    padding-left: 100px;
   }
 }
 
