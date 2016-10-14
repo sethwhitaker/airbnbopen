@@ -1,25 +1,26 @@
 // Header
-@include media-breakpoint-up(xl) {
-	.container-wide {
-	    width: 100%;
-	    max-width: 1200px;
+.header{
+	background-color: $white;
+	@include media-breakpoint-between(xs,sm) {
+		.container-wide {
+		    width: 100%;
+		    max-width: 1140px;
+		}
 	}
 }
-.header{
-	// border-bottom: 1px solid $medium-grey;
-	background-color: $white;
-}
 .navbar{
-	//airbnb
 	z-index: 3;
 	text-align: right;
 	position: relative;
-	padding:10px 0;
+	padding: 0;
 	@include media-breakpoint-up(md) {
 		padding-top: 20px;
 		padding-right: 140px;
 		padding-bottom: 20px;
 		padding-left: 0px;
+	}
+	@include media-breakpoint-down(sm) {
+		padding-bottom: 75px;
 	}
 }
 .navbar-toggler {
@@ -32,36 +33,57 @@
 }
 .nav-list{
 	@include media-breakpoint-down(sm) {
-		clear:both;
+		background:#333;
+		width: 100%;
 	}
 }
 .navbar-nav{
 	@include clearfix;
 	padding: 8px 0;
 	.nav-item{
-		float:none;
-		display: inline-block;
-		margin-right: 30px;
+		display: block;
+		margin-right: 2rem;
+		padding: 1rem 0;
+		+ .nav-item{
+			margin-left: 0;
+		}
+		@include media-breakpoint-up(md) {
+			float:none;
+			padding: 0;
+			display: inline-block;
+		}
 		@include media-breakpoint-up(lg) {
 			margin-right: 60px;
 		}
 		@include media-breakpoint-up(xl) {
 			margin-right: 100px;
 		}
-		&.active{
-			.nav-link{
-				border-bottom: 5px solid $rausch;
-			}
-		}
 	}
 	.nav-link{
 		font-family: $font-circular-book;
-		color:$rausch;
+		color:$white;
+		display: inline;
+		font-size: 0.875rem;
+		padding-top:0.25rem;
+		padding-bottom:0.25rem;
+		@include media-breakpoint-up(md) {
+			color:$rausch;
+			font-size: 1rem;
+			display: block;
+		}
+		&.active{
+			border-bottom: 3px solid $rausch;
+			@include media-breakpoint-up(md) {
+				border-bottom-width: 5px;
+			}
+		}
 		&:hover,
 		&:active,
 		&:focus{
-				border-bottom: 5px solid $rausch;
-			// color:lighten($rausch, 10%);
+			border-bottom: 3px solid $rausch;
+			@include media-breakpoint-up(md) {
+				border-bottom-width: 5px;
+			}
 		}
 	}
 }
@@ -69,27 +91,27 @@
 
 .header .button--login {
    position: absolute;
-   right: 30px;
-   top:20px;
+   right: 45px;
+   top:auto;
+   bottom:20px;
    @include media-breakpoint-only(xs) {
     	padding-left:25px;
     	padding-right:25px;
  	}
    @include media-breakpoint-up(md) {
    	top: 30px;
-   	right: 0;
+   	right: 15px;
+   	bottom:auto;
    }
 }
 
 
 @include media-breakpoint-down(sm) {
-	.navbar{
-		padding-bottom: 80px;
-	}
 	.header__navbar-header {
 		position: absolute;
 		right: 0;
 		bottom: 0;
 		left: 0;
+		padding-bottom: 10px;
 	}
 }

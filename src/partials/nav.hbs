@@ -1,23 +1,29 @@
 <header class="header">
 	<div class="container container-wide">
-		<nav class="navbar">
-			<div class="header__navbar-header">
-				<a class="navbar-brand" href="#"><img src="/img/logo.png" class="logo__image logo__image--small" alt="Airbnb Open 2016 logo"></a>
-				<button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
+		<nav class="navbar row">
+			<div class="header__navbar-header col-xs">
+				<a class="navbar-brand" href="/"><img src="/img/logo.png" class="logo__image logo__image--small" alt="Airbnb Open 2016 logo"></a>
+				<button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse" data-target="#header-navbar" aria-controls="header-navbar" aria-expanded="false" aria-label="Toggle navigation">
 				&#9776;
 				</button>
 			</div>
-		 	<div class="nav-list collapse navbar-toggleable-sm" id="exCollapsingNavbar2">
+		 	<div class="nav-list collapse navbar-toggleable-sm" id="header-navbar">
 		    	<ul class="nav navbar-nav">
-		      	<li class="nav-item active">
-		        		<a class="nav-link" href="#add-events" data-scroll-to="true">Add Events</a>
+		    		{{#is bodyClass "dashboard"}}
+		      	<li class="nav-item ">
+		        		<a class="nav-link active" href="#add-events" data-scroll-to="true">Add Events</a>
 		      	</li>
 		      	<li class="nav-item">
 		        		<a class="nav-link" href="#view-itinerary" data-scroll-to="true">Your Itinerary</a>
 		      	</li>
+		      	{{else}}
+		      	<li class="nav-item">
+		        		<a class="nav-link hidden-md-up" href="/dashboard.html">Dashboard</a>
+		      	</li>
+		      	{{/is}}
 		    	</ul>
 		  	</div>
-		   <a class="btn btn-outline-rausch btn-sm button--login" href="#">Logout</a>
+		   <a class="btn btn-outline-rausch btn-sm button--login" href="/">Logout</a>
 		</nav>
 	</div>
 </header>
