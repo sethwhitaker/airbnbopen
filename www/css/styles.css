@@ -9195,9 +9195,9 @@ body.login {
 }
 
 .gradient-beach-rausch .panel-title a {
-  background: -webkit-linear-gradient(-45deg, #FFB400, #FF5A5F);
-  background: -o-linear-gradient(-45deg, #FFB400, #FF5A5F);
-  background: linear-gradient(-45deg, #FFB400, #FF5A5F);
+  background: -webkit-linear-gradient(135deg, #FFB400, #FF5A5F);
+  background: -o-linear-gradient(135deg, #FFB400, #FF5A5F);
+  background: linear-gradient(135deg, #FFB400, #FF5A5F);
   background-size: 250%;
 }
 
@@ -9206,7 +9206,7 @@ body.login {
 }
 
 .gradient-beach-rausch .panel-title a.collapsed {
-  background: #FF5A5F;
+  background: #FFB400;
 }
 
 .panel-title a:hover, .panel-title a:active {

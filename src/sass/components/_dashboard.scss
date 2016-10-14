@@ -108,9 +108,9 @@
       	background-size: 250%;
       }
       .gradient-beach-rausch &{
-      	background: -webkit-linear-gradient(-45deg, $beach, $rausch);
-		   background: -o-linear-gradient(-45deg, $beach, $rausch);
-	      background: linear-gradient(-45deg, $beach, $rausch);
+      	background: -webkit-linear-gradient(135deg, $beach, $rausch);
+		   background: -o-linear-gradient(135deg, $beach, $rausch);
+	      background: linear-gradient(135deg, $beach, $rausch);
       	background-size: 250%;
       }
       &.collapsed{
@@ -118,7 +118,7 @@
 			   background: $babu;
 	      }
 	      .gradient-beach-rausch &{
-	      	background: $rausch;
+	      	background: $beach;
 	      }
       }
       &:hover,
