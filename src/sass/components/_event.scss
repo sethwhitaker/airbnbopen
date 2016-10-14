@@ -1,6 +1,24 @@
+body.event{
+	background: linear-gradient(135deg, #4da2ab, #711c5f) top center no-repeat scroll;
+    background-size: cover;
+}
+
+.event-intro{
+	padding-top:30px;
+	padding-bottom:60px;
+	color:white;
+	@include media-breakpoint-up(md) {
+		padding-top:120px;
+		padding-bottom:60px;
+	}
+	.lined-heading{
+		&:after {
+			background: $white;
+		}
+	}
+}
+
 .lined-heading{
-	font-family: $font-circular-bold;
-	font-size: 2.75rem;
 	&:after {
 		display: block;
 		width: 51px;
@@ -17,12 +35,15 @@
 	font-size: 1rem;
 	text-transform: uppercase;
 	font-family: $font-circular-medium;
+	color:$white;
 }
 
-.event-intro{
-		margin-top:30px;
+.event-title{
+	color:$white;
+	font-family: $font-circular-bold;
+	font-size: 2rem;
 	@include media-breakpoint-up(md) {
-		margin-top:120px;
+		font-size: 2.75rem;
 	}
 }
 
@@ -32,11 +53,11 @@
 
 .back-arrow{
 	font-size: 50px;
-	color:$babu;
+	color:$white;
 	margin-bottom: 20px;
    margin-left: -15px;
 	&:hover{
-		color:lighten($babu, 4%);
+		color:darken($white, 5%);
 	}
 }
 
