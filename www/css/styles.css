@@ -8650,7 +8650,7 @@ select:-webkit-autofill:focus {
 }
 
 .btn {
-  padding: 12px 50px;
+  padding: 12px 38px;
   -webkit-border-radius: 2px;
   -o-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -8686,6 +8686,11 @@ select:-webkit-autofill:focus {
 .btn-lg, .btn-group-lg > .btn {
   padding: 20px 60px;
   font-size: 1.125rem;
+}
+
+.btn-block {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .btn-hackberry {
@@ -8822,14 +8827,14 @@ select:-webkit-autofill:focus {
 
 .btn-black {
   color: white;
-  background-color: #000000;
-  border-color: #000000;
+  background-color: #1d1d1b;
+  border-color: #1d1d1b;
 }
 
 .btn-black:hover {
   color: white;
-  border-color: #0a0a0a;
-  background-color: #0a0a0a;
+  border-color: #262626;
+  background-color: #262626;
 }
 
 .btn-outline-hackberry {
@@ -8943,13 +8948,13 @@ select:-webkit-autofill:focus {
 }
 
 .btn-outline-black {
-  color: #000000;
-  border: 2px solid #000000;
+  color: #1d1d1b;
+  border: 2px solid #1d1d1b;
 }
 
 .btn-outline-black:hover {
   color: white;
-  background-color: #000000;
+  background-color: #1d1d1b;
 }
 
 .btn-outline-white:hover {
@@ -9095,6 +9100,68 @@ body.login {
   padding: 30px 0;
 }
 
+.event {
+  margin-bottom: 50px;
+}
+
+.event:last-child {
+  margin-bottom: 0;
+}
+
+.event-title {
+  font-family: "Circular Air Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .event-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .event-title {
+    font-size: 1.875rem;
+  }
+}
+
+.event-details {
+  font-family: "Circular Air Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.nav-tabs-container {
+  text-align: center;
+  padding: 1.75rem 0 0;
+}
+
+.nav-tabs {
+  display: inline-block;
+  border-bottom: none;
+}
+
+.nav-tabs .nav-item {
+  margin: 0 1.25rem;
+}
+
+.nav-tabs .nav-link {
+  padding: 0.5rem 0;
+  border: none;
+  border-top-right-radius: 0rem;
+  border-top-left-radius: 0rem;
+  font-family: "Circular Air Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #1d1d1b;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-link.active:focus, .nav-tabs .nav-link.active:hover {
+  font-family: "Circular Air Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #1d1d1b;
+  border-bottom: 3px solid #1d1d1b;
+}
+
+.tab-content {
+  padding: 50px 0;
+}
+
 .panel {
   margin-bottom: 50px;
 }
@@ -9105,10 +9172,19 @@ body.login {
 
 .panel-title a {
   display: block;
-  padding: 20px;
+  padding: 20px 30px 20px 15px;
   color: white;
   text-align: center;
   position: relative;
+  font-family: "Circular Air Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .panel-title a {
+    padding: 20px;
+    font-size: 2rem;
+  }
 }
 
 .gradient-babu-beach .panel-title a {
@@ -9139,13 +9215,22 @@ body.login {
 
 .panel-title a .material-icons {
   position: absolute;
-  right: 35px;
-  font-size: 40px;
   line-height: 0.75;
+  font-size: 1.5rem;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (min-width: 768px) {
+  .panel-title a .material-icons {
+    font-size: 40px;
+    right: 35px;
+  }
 }
 
 .panel-title a.collapsed .expand-more {
-  transform: rotate(180deg);
+  transform: rotate(180deg) translateY(50%);
 }
 
 /*!

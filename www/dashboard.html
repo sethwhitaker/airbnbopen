@@ -42,10 +42,10 @@
 		<div class="dashboard-intro">
 			<div class="container">
 				<div class="dashboard-intro-content">
-					<h1 class="font-street-markings-clean display-3">HELLO <br>CATHRINE</h1>
-					<p class="lead">Looks like you have space in your schedule! Pick from <br>the following event types to fill it up.</p>
-					<a href="#" class="btn btn-primary">Add Events</a>
-					<a href="#" class="btn btn-outline-white">View Your Itinerary</a>
+					<h1 class="font-street-markings-clean display-3 m-b-1">HELLO <br>CATHRINE</h1>
+					<p class="lead m-b-3">Looks like you have space in your schedule! Pick from <br>the following event types to fill it up.</p>
+					<a href="#" class="btn btn-primary pull-xs-left m-r-1">Add Events</a>
+					<a href="#" class="btn btn-outline-white pull-xs-left">View Your Itinerary</a>
 				</div>
 			</div>
 		</div>
@@ -57,7 +57,7 @@
 			</div>
 
 			<div id="add-accordion" role="tablist" aria-multiselectable="true">
-			  	<div class="panel panel-default">
+			  	<div class="panel">
 			    	<div class="panel-heading" role="tab" id="addHeadingOne">
 			      	<h4 class="panel-title">
 			        		<a data-toggle="collapse" href="#addCollapseOne" aria-expanded="true" aria-controls="addCollapseOne">Conversation Spaces (3 Needed)
@@ -66,17 +66,92 @@
 			      	</h4>
 			   	</div>
 			    	<div id="addCollapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="addHeadingOne">
-			    			<div class="row flex-items-lg-around">
-			    				<div class="col-lg-11">
-			    					<div class="events-list">
-			    						<div class="event">
-			    							Lorem ipsum dolor sit amet, consectetur adipisicing elit. In aspernatur, quibusdam praesentium asperiores magni id sapiente sequi enim assumenda ducimus tempore ipsam ex eius, culpa modi qui eveniet et, quas.
-			    						</div>			    					</div>
-			    				</div>
-			    			</div>
-			    	</div>
+			    		<!-- Nav tabs -->
+			    		<div class="nav-tabs-container">
+			    			<ul class="nav nav-tabs" role="tablist">
+			    			  <li class="nav-item">
+			    			    <a class="nav-link active" data-toggle="tab" href="#wed" role="tab">Wed</a>
+			    			  </li>
+			    			  <li class="nav-item">
+			    			    <a class="nav-link" data-toggle="tab" href="#thurs" role="tab">Thurs</a>
+			    			  </li>
+			    			  <li class="nav-item">
+			    			    <a class="nav-link" data-toggle="tab" href="#fri" role="tab">Fri</a>
+			    			  </li>
+			    			  <li class="nav-item">
+			    			    <a class="nav-link" data-toggle="tab" href="#sat" role="tab">Sat</a>
+			    			  </li>
+			    			</ul>
+			    		</div>
+			    		
+			    		<!-- Tab panes -->
+			    		<div class="tab-content">
+			    		  	<div class="tab-pane active" id="wed" role="tabpanel">
+			    						<div class="event row flex-items-md-middle">
+			    							<div class="col-md-5 col-lg-6 col-xl-5 offset-xl-1">
+			    								<h3 class="event-title">Influence the Future Product; Give Your Feedback - Workshop</h3>
+			    							</div>
+			    							<div class="col-md-4 col-xl-3">
+			    								<p class="event-details">Host Clubhouse @ Clifton's<br> 3:00 PM – 3:45 PM PST<br> Thursday, November 17</p>
+			    							</div>
+			    							<div class="col-md-3 col-lg-2">
+			    								<a href="#" class="btn btn-outline-babu btn-block">Select Event</a>
+			    							</div>
+			    						</div>
+			    						<div class="event row flex-items-md-middle">
+			    							<div class="col-md-5 col-lg-6 col-xl-5 offset-xl-1">
+			    								<h3 class="event-title">Designing the New Mobile Experience wih Hosts</h3>
+			    							</div>
+			    							<div class="col-md-4 col-xl-3">
+			    								<p class="event-details">Orpheum Theatre <br>5:00 PM – 6:00 PM PST<br> Thursday, November 17</p>
+			    							</div>
+			    							<div class="col-md-3 col-lg-2">
+			    								<a href="#" class="btn btn-outline-babu btn-block">Select Event</a>
+			    							</div>
+			    						</div>
+			    		  	</div>
+			    		  	<div class="tab-pane" id="thurs" role="tabpanel">
+			    						<div class="event row flex-items-md-middle">
+			    							<div class="col-md-5 col-lg-6 col-xl-5 offset-xl-1">
+			    								<h3 class="event-title">Designing the New Mobile Experience wih Hosts</h3>
+			    							</div>
+			    							<div class="col-md-4 col-xl-3">
+			    								<p class="event-details">Orpheum Theatre <br>5:00 PM – 6:00 PM PST<br> Thursday, November 17</p>
+			    							</div>
+			    							<div class="col-md-3 col-lg-2">
+			    								<a href="#" class="btn btn-outline-babu btn-block">Select Event</a>
+			    							</div>
+			    						</div>
+			    		  	</div>
+			    		  	<div class="tab-pane" id="fri" role="tabpanel">
+			    						<div class="event row flex-items-md-middle">
+			    							<div class="col-md-5 col-lg-6 col-xl-5 offset-xl-1">
+			    								<h3 class="event-title">Open Book Conversations</h3>
+			    							</div>
+			    							<div class="col-md-4 col-xl-3">
+			    								<p class="event-details">BNKR <br>11:00 AM – 6:00 PM PST<br> Friday, November 18</p>
+			    							</div>
+			    							<div class="col-md-3 col-lg-2">
+			    								<a href="#" class="btn btn-outline-babu btn-block">Select Event</a>
+			    							</div>
+			    						</div>
+			    		  	</div>
+			    		  	<div class="tab-pane" id="sat" role="tabpanel">
+			    						<div class="event row flex-items-md-middle">
+			    							<div class="col-md-5 col-lg-6 col-xl-5 offset-xl-1">
+			    								<h3 class="event-title">Designing the New Mobile Experience wih Hosts</h3>
+			    							</div>
+			    							<div class="col-md-4 col-xl-3">
+			    								<p class="event-details">Orpheum Theatre <br>5:00 PM – 6:00 PM PST<br> Thursday, November 17</p>
+			    							</div>
+			    							<div class="col-md-3 col-lg-2">
+			    								<a href="#" class="btn btn-outline-babu btn-block">Select Event</a>
+			    							</div>
+			    						</div>
+			    		  	</div>
+			    		</div>			    	</div>
 			  	</div>
-			  	<div class="panel panel-default">
+			  	<div class="panel">
 			    	<div class="panel-heading" role="tab" id="addHeadingTwo">
 				      <h4 class="panel-title">
 				        <a class="collapsed" data-toggle="collapse" href="#addCollapseTwo" aria-expanded="false" aria-controls="addCollapseTwo">
@@ -86,17 +161,92 @@
 				      </h4>
 			    	</div>
 			   	<div id="addCollapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="addHeadingTwo">
-			      	<div class="row flex-items-lg-around">
-			      		<div class="col-lg-11">
-			      			<div class="events-list">
-			      				<div class="event">
-			      					Lorem ipsum dolor sit amet, consectetur adipisicing elit. In aspernatur, quibusdam praesentium asperiores magni id sapiente sequi enim assumenda ducimus tempore ipsam ex eius, culpa modi qui eveniet et, quas.
-			      				</div>			      			</div>
-			      		</div>
-			      	</div>
-			    	</div>
+			   		<!-- Nav tabs -->
+			   		<div class="nav-tabs-container">
+			   			<ul class="nav nav-tabs" role="tablist">
+			   			  <li class="nav-item">
+			   			    <a class="nav-link active" data-toggle="tab" href="#wed" role="tab">Wed</a>
+			   			  </li>
+			   			  <li class="nav-item">
+			   			    <a class="nav-link" data-toggle="tab" href="#thurs" role="tab">Thurs</a>
+			   			  </li>
+			   			  <li class="nav-item">
+			   			    <a class="nav-link" data-toggle="tab" href="#fri" role="tab">Fri</a>
+			   			  </li>
+			   			  <li class="nav-item">
+			   			    <a class="nav-link" data-toggle="tab" href="#sat" role="tab">Sat</a>
+			   			  </li>
+			   			</ul>
+			   		</div>
+			   		
+			   		<!-- Tab panes -->
+			   		<div class="tab-content">
+			   		  	<div class="tab-pane active" id="wed" role="tabpanel">
+			   						<div class="event row flex-items-md-middle">
+			   							<div class="col-md-5 col-lg-6 col-xl-5 offset-xl-1">
+			   								<h3 class="event-title">Influence the Future Product; Give Your Feedback - Workshop</h3>
+			   							</div>
+			   							<div class="col-md-4 col-xl-3">
+			   								<p class="event-details">Host Clubhouse @ Clifton's<br> 3:00 PM – 3:45 PM PST<br> Thursday, November 17</p>
+			   							</div>
+			   							<div class="col-md-3 col-lg-2">
+			   								<a href="#" class="btn btn-outline-babu btn-block">Select Event</a>
+			   							</div>
+			   						</div>
+			   						<div class="event row flex-items-md-middle">
+			   							<div class="col-md-5 col-lg-6 col-xl-5 offset-xl-1">
+			   								<h3 class="event-title">Designing the New Mobile Experience wih Hosts</h3>
+			   							</div>
+			   							<div class="col-md-4 col-xl-3">
+			   								<p class="event-details">Orpheum Theatre <br>5:00 PM – 6:00 PM PST<br> Thursday, November 17</p>
+			   							</div>
+			   							<div class="col-md-3 col-lg-2">
+			   								<a href="#" class="btn btn-outline-babu btn-block">Select Event</a>
+			   							</div>
+			   						</div>
+			   		  	</div>
+			   		  	<div class="tab-pane" id="thurs" role="tabpanel">
+			   						<div class="event row flex-items-md-middle">
+			   							<div class="col-md-5 col-lg-6 col-xl-5 offset-xl-1">
+			   								<h3 class="event-title">Designing the New Mobile Experience wih Hosts</h3>
+			   							</div>
+			   							<div class="col-md-4 col-xl-3">
+			   								<p class="event-details">Orpheum Theatre <br>5:00 PM – 6:00 PM PST<br> Thursday, November 17</p>
+			   							</div>
+			   							<div class="col-md-3 col-lg-2">
+			   								<a href="#" class="btn btn-outline-babu btn-block">Select Event</a>
+			   							</div>
+			   						</div>
+			   		  	</div>
+			   		  	<div class="tab-pane" id="fri" role="tabpanel">
+			   						<div class="event row flex-items-md-middle">
+			   							<div class="col-md-5 col-lg-6 col-xl-5 offset-xl-1">
+			   								<h3 class="event-title">Open Book Conversations</h3>
+			   							</div>
+			   							<div class="col-md-4 col-xl-3">
+			   								<p class="event-details">BNKR <br>11:00 AM – 6:00 PM PST<br> Friday, November 18</p>
+			   							</div>
+			   							<div class="col-md-3 col-lg-2">
+			   								<a href="#" class="btn btn-outline-babu btn-block">Select Event</a>
+			   							</div>
+			   						</div>
+			   		  	</div>
+			   		  	<div class="tab-pane" id="sat" role="tabpanel">
+			   						<div class="event row flex-items-md-middle">
+			   							<div class="col-md-5 col-lg-6 col-xl-5 offset-xl-1">
+			   								<h3 class="event-title">Designing the New Mobile Experience wih Hosts</h3>
+			   							</div>
+			   							<div class="col-md-4 col-xl-3">
+			   								<p class="event-details">Orpheum Theatre <br>5:00 PM – 6:00 PM PST<br> Thursday, November 17</p>
+			   							</div>
+			   							<div class="col-md-3 col-lg-2">
+			   								<a href="#" class="btn btn-outline-babu btn-block">Select Event</a>
+			   							</div>
+			   						</div>
+			   		  	</div>
+			   		</div>			    	</div>
 			  	</div>
-			  	<div class="panel panel-default">
+			  	<div class="panel">
 			    	<div class="panel-heading" role="tab" id="addHeadingThree">
 				      <h4 class="panel-title">
 				        <a class="collapsed" data-toggle="collapse" href="#addCollapseThree" aria-expanded="false" aria-controls="addCollapseThree">
@@ -106,15 +256,90 @@
 				      </h4>
 			    	</div>
 			   	<div id="addCollapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="addHeadingThree">
-			      	<div class="row flex-items-lg-around">
-			      		<div class="col-lg-11">
-			      			<div class="events-list">
-			      				<div class="event">
-			      					Lorem ipsum dolor sit amet, consectetur adipisicing elit. In aspernatur, quibusdam praesentium asperiores magni id sapiente sequi enim assumenda ducimus tempore ipsam ex eius, culpa modi qui eveniet et, quas.
-			      				</div>			      			</div>
-			      		</div>
-			      	</div>
-			    	</div>
+			   		<!-- Nav tabs -->
+			   		<div class="nav-tabs-container">
+			   			<ul class="nav nav-tabs" role="tablist">
+			   			  <li class="nav-item">
+			   			    <a class="nav-link active" data-toggle="tab" href="#wed" role="tab">Wed</a>
+			   			  </li>
+			   			  <li class="nav-item">
+			   			    <a class="nav-link" data-toggle="tab" href="#thurs" role="tab">Thurs</a>
+			   			  </li>
+			   			  <li class="nav-item">
+			   			    <a class="nav-link" data-toggle="tab" href="#fri" role="tab">Fri</a>
+			   			  </li>
+			   			  <li class="nav-item">
+			   			    <a class="nav-link" data-toggle="tab" href="#sat" role="tab">Sat</a>
+			   			  </li>
+			   			</ul>
+			   		</div>
+			   		
+			   		<!-- Tab panes -->
+			   		<div class="tab-content">
+			   		  	<div class="tab-pane active" id="wed" role="tabpanel">
+			   						<div class="event row flex-items-md-middle">
+			   							<div class="col-md-5 col-lg-6 col-xl-5 offset-xl-1">
+			   								<h3 class="event-title">Influence the Future Product; Give Your Feedback - Workshop</h3>
+			   							</div>
+			   							<div class="col-md-4 col-xl-3">
+			   								<p class="event-details">Host Clubhouse @ Clifton's<br> 3:00 PM – 3:45 PM PST<br> Thursday, November 17</p>
+			   							</div>
+			   							<div class="col-md-3 col-lg-2">
+			   								<a href="#" class="btn btn-outline-babu btn-block">Select Event</a>
+			   							</div>
+			   						</div>
+			   						<div class="event row flex-items-md-middle">
+			   							<div class="col-md-5 col-lg-6 col-xl-5 offset-xl-1">
+			   								<h3 class="event-title">Designing the New Mobile Experience wih Hosts</h3>
+			   							</div>
+			   							<div class="col-md-4 col-xl-3">
+			   								<p class="event-details">Orpheum Theatre <br>5:00 PM – 6:00 PM PST<br> Thursday, November 17</p>
+			   							</div>
+			   							<div class="col-md-3 col-lg-2">
+			   								<a href="#" class="btn btn-outline-babu btn-block">Select Event</a>
+			   							</div>
+			   						</div>
+			   		  	</div>
+			   		  	<div class="tab-pane" id="thurs" role="tabpanel">
+			   						<div class="event row flex-items-md-middle">
+			   							<div class="col-md-5 col-lg-6 col-xl-5 offset-xl-1">
+			   								<h3 class="event-title">Designing the New Mobile Experience wih Hosts</h3>
+			   							</div>
+			   							<div class="col-md-4 col-xl-3">
+			   								<p class="event-details">Orpheum Theatre <br>5:00 PM – 6:00 PM PST<br> Thursday, November 17</p>
+			   							</div>
+			   							<div class="col-md-3 col-lg-2">
+			   								<a href="#" class="btn btn-outline-babu btn-block">Select Event</a>
+			   							</div>
+			   						</div>
+			   		  	</div>
+			   		  	<div class="tab-pane" id="fri" role="tabpanel">
+			   						<div class="event row flex-items-md-middle">
+			   							<div class="col-md-5 col-lg-6 col-xl-5 offset-xl-1">
+			   								<h3 class="event-title">Open Book Conversations</h3>
+			   							</div>
+			   							<div class="col-md-4 col-xl-3">
+			   								<p class="event-details">BNKR <br>11:00 AM – 6:00 PM PST<br> Friday, November 18</p>
+			   							</div>
+			   							<div class="col-md-3 col-lg-2">
+			   								<a href="#" class="btn btn-outline-babu btn-block">Select Event</a>
+			   							</div>
+			   						</div>
+			   		  	</div>
+			   		  	<div class="tab-pane" id="sat" role="tabpanel">
+			   						<div class="event row flex-items-md-middle">
+			   							<div class="col-md-5 col-lg-6 col-xl-5 offset-xl-1">
+			   								<h3 class="event-title">Designing the New Mobile Experience wih Hosts</h3>
+			   							</div>
+			   							<div class="col-md-4 col-xl-3">
+			   								<p class="event-details">Orpheum Theatre <br>5:00 PM – 6:00 PM PST<br> Thursday, November 17</p>
+			   							</div>
+			   							<div class="col-md-3 col-lg-2">
+			   								<a href="#" class="btn btn-outline-babu btn-block">Select Event</a>
+			   							</div>
+			   						</div>
+			   		  	</div>
+			   		</div>			    	</div>
 			  	</div>
 			</div>
 		</div>
@@ -128,7 +353,7 @@
 			</div>
 
 			<div id="itinerary-accordion" role="tablist" aria-multiselectable="true">
-			  	<div class="panel panel-default">
+			  	<div class="panel">
 			    	<div class="panel-heading" role="tab" id="headingWed">
 			      	<h4 class="panel-title">
 			        		<a data-toggle="collapse" href="#collapseWed" aria-expanded="true" aria-controls="collapseWed">Wednesday, November 16
@@ -137,17 +362,57 @@
 			      	</h4>
 			   	</div>
 			    	<div id="collapseWed" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingWed">
-			    			<div class="row flex-items-lg-around">
-			    				<div class="col-lg-11">
-			    					<div class="events-list">
-			    						<div class="event">
-			    							Lorem ipsum dolor sit amet, consectetur adipisicing elit. In aspernatur, quibusdam praesentium asperiores magni id sapiente sequi enim assumenda ducimus tempore ipsam ex eius, culpa modi qui eveniet et, quas.
-			    						</div>			    					</div>
-			    				</div>
-			    			</div>
-			    	</div>
+			    		<!-- Tab panes -->
+			    		<div class="tab-content">
+			    					<div class="event row flex-items-md-middle">
+			    						<div class="col-md-5 col-lg-6 col-xl-5 offset-xl-1">
+			    							<h3 class="event-title">Influence the Future Product; Give Your Feedback - Workshop</h3>
+			    						</div>
+			    						<div class="col-md-4 col-xl-3">
+			    							<p class="event-details">Host Clubhouse @ Clifton's<br> 3:00 PM – 3:45 PM PST<br> Thursday, November 17</p>
+			    						</div>
+			    						<div class="col-md-3 col-lg-2">
+			    							<a href="#" class="btn btn-outline-rausch btn-block">View Event</a>
+			    						</div>
+			    					</div>
+			    					<div class="event row flex-items-md-middle">
+			    						<div class="col-md-5 col-lg-6 col-xl-5 offset-xl-1">
+			    							<h3 class="event-title">Designing the New Mobile Experience wih Hosts</h3>
+			    						</div>
+			    						<div class="col-md-4 col-xl-3">
+			    							<p class="event-details">Orpheum Theatre <br>5:00 PM – 6:00 PM PST<br> Thursday, November 17</p>
+			    						</div>
+			    						<div class="col-md-3 col-lg-2">
+			    							<a href="#" class="btn btn-outline-rausch btn-block">View Event</a>
+			    						</div>
+			    					</div>
+			    		
+			    					<div class="event row flex-items-md-middle">
+			    						<div class="col-md-5 col-lg-6 col-xl-5 offset-xl-1">
+			    							<h3 class="event-title">Open Book Conversations</h3>
+			    						</div>
+			    						<div class="col-md-4 col-xl-3">
+			    							<p class="event-details">BNKR <br>11:00 AM – 6:00 PM PST<br> Friday, November 18</p>
+			    						</div>
+			    						<div class="col-md-3 col-lg-2">
+			    							<a href="#" class="btn btn-outline-rausch btn-block">View Event</a>
+			    						</div>
+			    					</div>
+			    		
+			    					<div class="event row flex-items-md-middle">
+			    						<div class="col-md-5 col-lg-6 col-xl-5 offset-xl-1">
+			    							<h3 class="event-title">Designing the New Mobile Experience wih Hosts</h3>
+			    						</div>
+			    						<div class="col-md-4 col-xl-3">
+			    							<p class="event-details">Orpheum Theatre <br>5:00 PM – 6:00 PM PST<br> Thursday, November 17</p>
+			    						</div>
+			    						<div class="col-md-3 col-lg-2">
+			    							<a href="#" class="btn btn-outline-rausch btn-block">View Event</a>
+			    						</div>
+			    					</div>
+			    		</div>			    	</div>
 			  	</div>
-			  	<div class="panel panel-default">
+			  	<div class="panel">
 			    	<div class="panel-heading" role="tab" id="headingThurs">
 				      <h4 class="panel-title">
 				        <a class="collapsed" data-toggle="collapse" href="#collapseThurs" aria-expanded="false" aria-controls="collapseThurs">
@@ -157,17 +422,57 @@
 				      </h4>
 			    	</div>
 			   	<div id="collapseThurs" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThurs">
-			      	<div class="row flex-items-lg-around">
-			      		<div class="col-lg-11">
-			      			<div class="events-list">
-			      				<div class="event">
-			      					Lorem ipsum dolor sit amet, consectetur adipisicing elit. In aspernatur, quibusdam praesentium asperiores magni id sapiente sequi enim assumenda ducimus tempore ipsam ex eius, culpa modi qui eveniet et, quas.
-			      				</div>			      			</div>
-			      		</div>
-			      	</div>
-			    	</div>
+			   		<!-- Tab panes -->
+			   		<div class="tab-content">
+			   					<div class="event row flex-items-md-middle">
+			   						<div class="col-md-5 col-lg-6 col-xl-5 offset-xl-1">
+			   							<h3 class="event-title">Influence the Future Product; Give Your Feedback - Workshop</h3>
+			   						</div>
+			   						<div class="col-md-4 col-xl-3">
+			   							<p class="event-details">Host Clubhouse @ Clifton's<br> 3:00 PM – 3:45 PM PST<br> Thursday, November 17</p>
+			   						</div>
+			   						<div class="col-md-3 col-lg-2">
+			   							<a href="#" class="btn btn-outline-rausch btn-block">View Event</a>
+			   						</div>
+			   					</div>
+			   					<div class="event row flex-items-md-middle">
+			   						<div class="col-md-5 col-lg-6 col-xl-5 offset-xl-1">
+			   							<h3 class="event-title">Designing the New Mobile Experience wih Hosts</h3>
+			   						</div>
+			   						<div class="col-md-4 col-xl-3">
+			   							<p class="event-details">Orpheum Theatre <br>5:00 PM – 6:00 PM PST<br> Thursday, November 17</p>
+			   						</div>
+			   						<div class="col-md-3 col-lg-2">
+			   							<a href="#" class="btn btn-outline-rausch btn-block">View Event</a>
+			   						</div>
+			   					</div>
+			   		
+			   					<div class="event row flex-items-md-middle">
+			   						<div class="col-md-5 col-lg-6 col-xl-5 offset-xl-1">
+			   							<h3 class="event-title">Open Book Conversations</h3>
+			   						</div>
+			   						<div class="col-md-4 col-xl-3">
+			   							<p class="event-details">BNKR <br>11:00 AM – 6:00 PM PST<br> Friday, November 18</p>
+			   						</div>
+			   						<div class="col-md-3 col-lg-2">
+			   							<a href="#" class="btn btn-outline-rausch btn-block">View Event</a>
+			   						</div>
+			   					</div>
+			   		
+			   					<div class="event row flex-items-md-middle">
+			   						<div class="col-md-5 col-lg-6 col-xl-5 offset-xl-1">
+			   							<h3 class="event-title">Designing the New Mobile Experience wih Hosts</h3>
+			   						</div>
+			   						<div class="col-md-4 col-xl-3">
+			   							<p class="event-details">Orpheum Theatre <br>5:00 PM – 6:00 PM PST<br> Thursday, November 17</p>
+			   						</div>
+			   						<div class="col-md-3 col-lg-2">
+			   							<a href="#" class="btn btn-outline-rausch btn-block">View Event</a>
+			   						</div>
+			   					</div>
+			   		</div>			    	</div>
 			  	</div>
-			  	<div class="panel panel-default">
+			  	<div class="panel">
 			    	<div class="panel-heading" role="tab" id="headingFri">
 				      <h4 class="panel-title">
 				        <a class="collapsed" data-toggle="collapse" href="#collapseFri" aria-expanded="false" aria-controls="collapseFri">
@@ -177,17 +482,57 @@
 				      </h4>
 			    	</div>
 			   	<div id="collapseFri" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFri">
-			      	<div class="row flex-items-lg-around">
-			      		<div class="col-lg-11">
-			      			<div class="events-list">
-			      				<div class="event">
-			      					Lorem ipsum dolor sit amet, consectetur adipisicing elit. In aspernatur, quibusdam praesentium asperiores magni id sapiente sequi enim assumenda ducimus tempore ipsam ex eius, culpa modi qui eveniet et, quas.
-			      				</div>			      			</div>
-			      		</div>
-			      	</div>
-			    	</div>
+			   		<!-- Tab panes -->
+			   		<div class="tab-content">
+			   					<div class="event row flex-items-md-middle">
+			   						<div class="col-md-5 col-lg-6 col-xl-5 offset-xl-1">
+			   							<h3 class="event-title">Influence the Future Product; Give Your Feedback - Workshop</h3>
+			   						</div>
+			   						<div class="col-md-4 col-xl-3">
+			   							<p class="event-details">Host Clubhouse @ Clifton's<br> 3:00 PM – 3:45 PM PST<br> Thursday, November 17</p>
+			   						</div>
+			   						<div class="col-md-3 col-lg-2">
+			   							<a href="#" class="btn btn-outline-rausch btn-block">View Event</a>
+			   						</div>
+			   					</div>
+			   					<div class="event row flex-items-md-middle">
+			   						<div class="col-md-5 col-lg-6 col-xl-5 offset-xl-1">
+			   							<h3 class="event-title">Designing the New Mobile Experience wih Hosts</h3>
+			   						</div>
+			   						<div class="col-md-4 col-xl-3">
+			   							<p class="event-details">Orpheum Theatre <br>5:00 PM – 6:00 PM PST<br> Thursday, November 17</p>
+			   						</div>
+			   						<div class="col-md-3 col-lg-2">
+			   							<a href="#" class="btn btn-outline-rausch btn-block">View Event</a>
+			   						</div>
+			   					</div>
+			   		
+			   					<div class="event row flex-items-md-middle">
+			   						<div class="col-md-5 col-lg-6 col-xl-5 offset-xl-1">
+			   							<h3 class="event-title">Open Book Conversations</h3>
+			   						</div>
+			   						<div class="col-md-4 col-xl-3">
+			   							<p class="event-details">BNKR <br>11:00 AM – 6:00 PM PST<br> Friday, November 18</p>
+			   						</div>
+			   						<div class="col-md-3 col-lg-2">
+			   							<a href="#" class="btn btn-outline-rausch btn-block">View Event</a>
+			   						</div>
+			   					</div>
+			   		
+			   					<div class="event row flex-items-md-middle">
+			   						<div class="col-md-5 col-lg-6 col-xl-5 offset-xl-1">
+			   							<h3 class="event-title">Designing the New Mobile Experience wih Hosts</h3>
+			   						</div>
+			   						<div class="col-md-4 col-xl-3">
+			   							<p class="event-details">Orpheum Theatre <br>5:00 PM – 6:00 PM PST<br> Thursday, November 17</p>
+			   						</div>
+			   						<div class="col-md-3 col-lg-2">
+			   							<a href="#" class="btn btn-outline-rausch btn-block">View Event</a>
+			   						</div>
+			   					</div>
+			   		</div>			    	</div>
 			  	</div>
-			  	<div class="panel panel-default">
+			  	<div class="panel">
 			    	<div class="panel-heading" role="tab" id="headingSat">
 				      <h4 class="panel-title">
 				        <a class="collapsed" data-toggle="collapse" href="#collapseSat" aria-expanded="false" aria-controls="collapseSat">
@@ -197,15 +542,55 @@
 				      </h4>
 			    	</div>
 			   	<div id="collapseSat" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSat">
-			      	<div class="row flex-items-lg-around">
-			      		<div class="col-lg-11">
-			      			<div class="events-list">
-			      				<div class="event">
-			      					Lorem ipsum dolor sit amet, consectetur adipisicing elit. In aspernatur, quibusdam praesentium asperiores magni id sapiente sequi enim assumenda ducimus tempore ipsam ex eius, culpa modi qui eveniet et, quas.
-			      				</div>			      			</div>
-			      		</div>
-			      	</div>
-			    	</div>
+			   		<!-- Tab panes -->
+			   		<div class="tab-content">
+			   					<div class="event row flex-items-md-middle">
+			   						<div class="col-md-5 col-lg-6 col-xl-5 offset-xl-1">
+			   							<h3 class="event-title">Influence the Future Product; Give Your Feedback - Workshop</h3>
+			   						</div>
+			   						<div class="col-md-4 col-xl-3">
+			   							<p class="event-details">Host Clubhouse @ Clifton's<br> 3:00 PM – 3:45 PM PST<br> Thursday, November 17</p>
+			   						</div>
+			   						<div class="col-md-3 col-lg-2">
+			   							<a href="#" class="btn btn-outline-rausch btn-block">View Event</a>
+			   						</div>
+			   					</div>
+			   					<div class="event row flex-items-md-middle">
+			   						<div class="col-md-5 col-lg-6 col-xl-5 offset-xl-1">
+			   							<h3 class="event-title">Designing the New Mobile Experience wih Hosts</h3>
+			   						</div>
+			   						<div class="col-md-4 col-xl-3">
+			   							<p class="event-details">Orpheum Theatre <br>5:00 PM – 6:00 PM PST<br> Thursday, November 17</p>
+			   						</div>
+			   						<div class="col-md-3 col-lg-2">
+			   							<a href="#" class="btn btn-outline-rausch btn-block">View Event</a>
+			   						</div>
+			   					</div>
+			   		
+			   					<div class="event row flex-items-md-middle">
+			   						<div class="col-md-5 col-lg-6 col-xl-5 offset-xl-1">
+			   							<h3 class="event-title">Open Book Conversations</h3>
+			   						</div>
+			   						<div class="col-md-4 col-xl-3">
+			   							<p class="event-details">BNKR <br>11:00 AM – 6:00 PM PST<br> Friday, November 18</p>
+			   						</div>
+			   						<div class="col-md-3 col-lg-2">
+			   							<a href="#" class="btn btn-outline-rausch btn-block">View Event</a>
+			   						</div>
+			   					</div>
+			   		
+			   					<div class="event row flex-items-md-middle">
+			   						<div class="col-md-5 col-lg-6 col-xl-5 offset-xl-1">
+			   							<h3 class="event-title">Designing the New Mobile Experience wih Hosts</h3>
+			   						</div>
+			   						<div class="col-md-4 col-xl-3">
+			   							<p class="event-details">Orpheum Theatre <br>5:00 PM – 6:00 PM PST<br> Thursday, November 17</p>
+			   						</div>
+			   						<div class="col-md-3 col-lg-2">
+			   							<a href="#" class="btn btn-outline-rausch btn-block">View Event</a>
+			   						</div>
+			   					</div>
+			   		</div>			    	</div>
 			  	</div>
 			</div>
 		</div>
