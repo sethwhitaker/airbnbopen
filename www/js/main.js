@@ -6,16 +6,18 @@
 		function scrollTo(e){
 			e.preventDefault;
 
-		    var $this = $(this),
-		        $target = $(this.hash);
+			var $this = $(this),
+				  $target = $(this.hash);
 
-		    if( $target.length ){
-		      $('html,body').animate({
-		          scrollTop: $target.offset().top
-		        }, 700, 'swing');
-		    }
+			var offset = $this.data('scroll-offset');
 
-		    return false;
+			 if( $target.length ){
+				$('html,body').animate({
+					 scrollTop: $target.offset().top - offset
+				  }, 700, 'swing');
+			 }
+
+			 return false;
 		}
 
 		$('[data-scroll-to]').on('click', scrollTo);

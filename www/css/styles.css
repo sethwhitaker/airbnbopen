@@ -8979,6 +8979,10 @@ select:-webkit-autofill:focus {
 
 .header {
   background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  border-bottom: 1px solid #979797;
 }
 
 @media (max-width: 767px) {
@@ -9132,6 +9136,18 @@ select:-webkit-autofill:focus {
     bottom: 0;
     left: 0;
     padding-bottom: 10px;
+  }
+}
+
+.dashboard main,
+.event main {
+  padding-top: 75px;
+}
+
+@media (min-width: 768px) {
+  .dashboard main,
+  .event main {
+    padding-top: 98px;
   }
 }
 
