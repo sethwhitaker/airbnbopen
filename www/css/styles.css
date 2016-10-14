@@ -9282,7 +9282,7 @@ body.event {
   background: #FFB400;
 }
 
-.panel-title a:hover, .panel-title a:active {
+.panel-title a:hover, .panel-title a:active, .panel-title a:focus {
   text-decoration: none;
 }
 

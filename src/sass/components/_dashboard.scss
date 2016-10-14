@@ -158,9 +158,11 @@
 	      }
       }
       &:hover,
-      &:active{
+      &:active,
+      &:focus{
       	text-decoration: none;
       }
+
 		.material-icons{
 			position: absolute;
 			line-height: 0.75;
