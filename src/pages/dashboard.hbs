@@ -11,8 +11,10 @@ bodyClass: "dashboard"
 			<div class="dashboard-intro-content">
 				<h1 class="font-street-markings-clean display-3 m-b-1">HELLO <br>CATHERINE</h1>
 				<p class="lead m-b-3">Looks like you have space in your schedule! Pick from <br>the following event types to fill it up.</p>
-				<a href="#add-events" data-scroll-to="true" class="btn btn-primary pull-xs-left m-r-1">Add Events</a>
-				<a href="#view-itinerary" data-scroll-to="true" class="btn btn-outline-white pull-xs-left">View Your Itinerary</a>
+				<div class="clearfix">
+					<a href="#add-events" data-scroll-to="true" class="btn btn-primary pull-xs-left m-r-1">Add Events</a>
+					<a href="#view-itinerary" data-scroll-to="true" class="btn btn-outline-white pull-xs-left">View Your Itinerary</a>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -34,7 +36,9 @@ bodyClass: "dashboard"
 			      	</h4>
 			   	</div>
 			    	<div id="addCollapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="addHeadingOne">
-			    		{{>tabs}}
+		    			{{#parseJSON '{ "tab-id": "01" }'}}
+							{{>tabs}}
+						{{/parseJSON}}
 			    	</div>
 			  	</div>
 			  	<div class="panel">
@@ -47,7 +51,9 @@ bodyClass: "dashboard"
 				      </h4>
 			    	</div>
 			   	<div id="addCollapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="addHeadingTwo">
-			   		{{>tabs}}
+		   			{{#parseJSON '{ "tab-id": "02" }'}}
+							{{>tabs}}
+						{{/parseJSON}}
 			    	</div>
 			  	</div>
 			  	<div class="panel">
@@ -60,7 +66,9 @@ bodyClass: "dashboard"
 				      </h4>
 			    	</div>
 			   	<div id="addCollapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="addHeadingThree">
-			   		{{>tabs}}
+		   			{{#parseJSON '{ "tab-id": "03" }'}}
+							{{>tabs}}
+						{{/parseJSON}}
 			    	</div>
 			  	</div>
 			</div>
@@ -84,7 +92,7 @@ bodyClass: "dashboard"
 			      	</h4>
 			   	</div>
 			    	<div id="collapseWed" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingWed">
-			    		{{>tabs-itinerary}}
+		    			{{>tabs-itinerary}}
 			    	</div>
 			  	</div>
 			  	<div class="panel">
@@ -97,7 +105,7 @@ bodyClass: "dashboard"
 				      </h4>
 			    	</div>
 			   	<div id="collapseThurs" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThurs">
-			   		{{>tabs-itinerary}}
+		   			{{>tabs-itinerary}}
 			    	</div>
 			  	</div>
 			  	<div class="panel">
@@ -110,7 +118,7 @@ bodyClass: "dashboard"
 				      </h4>
 			    	</div>
 			   	<div id="collapseFri" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFri">
-			   		{{>tabs-itinerary}}
+		   			{{>tabs-itinerary}}
 			    	</div>
 			  	</div>
 			  	<div class="panel">
@@ -123,7 +131,7 @@ bodyClass: "dashboard"
 				      </h4>
 			    	</div>
 			   	<div id="collapseSat" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSat">
-			   		{{>tabs-itinerary}}
+		   			{{>tabs-itinerary}}
 			    	</div>
 			  	</div>
 			</div>
