@@ -9153,7 +9153,6 @@ body.login {
 }
 
 .nav-tabs .nav-link.active, .nav-tabs .nav-link.active:focus, .nav-tabs .nav-link.active:hover {
-  font-family: "Circular Air Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #1d1d1b;
   border-bottom: 3px solid #1d1d1b;
 }
