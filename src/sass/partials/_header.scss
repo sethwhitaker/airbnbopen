@@ -1,6 +1,95 @@
 // Header
+@include media-breakpoint-up(xl) {
+	.container-wide {
+	    width: 100%;
+	    max-width: 1200px;
+	}
+}
 .header{
-	border-bottom: 1px solid $medium-grey;
-	padding:20px 0;
+	// border-bottom: 1px solid $medium-grey;
 	background-color: $white;
+}
+.navbar{
+	//airbnb
+	z-index: 3;
+	text-align: right;
+	position: relative;
+	padding:10px 0;
+	@include media-breakpoint-up(md) {
+		padding-top: 20px;
+		padding-right: 140px;
+		padding-bottom: 20px;
+		padding-left: 0px;
+	}
+}
+.navbar-toggler {
+    padding: 1rem 0rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background: none;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+.nav-list{
+	@include media-breakpoint-down(sm) {
+		clear:both;
+	}
+}
+.navbar-nav{
+	@include clearfix;
+	padding: 8px 0;
+	.nav-item{
+		float:none;
+		display: inline-block;
+		margin-right: 30px;
+		@include media-breakpoint-up(lg) {
+			margin-right: 60px;
+		}
+		@include media-breakpoint-up(xl) {
+			margin-right: 100px;
+		}
+		&.active{
+			.nav-link{
+				border-bottom: 5px solid $rausch;
+			}
+		}
+	}
+	.nav-link{
+		font-family: $font-circular-book;
+		color:$rausch;
+		&:hover,
+		&:active,
+		&:focus{
+				border-bottom: 5px solid $rausch;
+			// color:lighten($rausch, 10%);
+		}
+	}
+}
+
+
+.header .button--login {
+   position: absolute;
+   right: 30px;
+   top:20px;
+   @include media-breakpoint-only(xs) {
+    	padding-left:25px;
+    	padding-right:25px;
+ 	}
+   @include media-breakpoint-up(md) {
+   	top: 30px;
+   	right: 0;
+   }
+}
+
+
+@include media-breakpoint-down(sm) {
+	.navbar{
+		padding-bottom: 80px;
+	}
+	.header__navbar-header {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
 }

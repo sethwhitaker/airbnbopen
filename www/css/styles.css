@@ -9279,12 +9279,24 @@ body.event {
 }
 
 .events-list {
+  padding: 15px 0;
+}
+
+@media (min-width: 768px) {
+  .events-list {
     padding: 65px 0 50px;
   }
+}
 
 .event {
+  margin-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+  .event {
     margin-bottom: 50px;
   }
+}
 
 .event:last-child {
   margin-bottom: 0;
@@ -9322,8 +9334,14 @@ body.event {
 
 .nav-tabs-container {
   text-align: center;
+  padding: 1rem 0 0;
+}
+
+@media (min-width: 768px) {
+  .nav-tabs-container {
     padding: 1.75rem 0 0;
   }
+}
 
 .nav-tabs {
   display: inline-block;
@@ -9349,8 +9367,14 @@ body.event {
 }
 
 .panel {
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .panel {
     margin-bottom: 50px;
   }
+}
 
 .panel-title {
   margin: 0;
