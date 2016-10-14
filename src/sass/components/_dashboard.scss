@@ -22,6 +22,7 @@
 	h1{
 		font-size: 4.375rem;
 		line-height: 1;
+		color:white;
 	}
 }
 .dashboard-heading{
@@ -39,6 +40,14 @@
 .event-title{
 	font-family: $font-circular-bold;
 	font-size: 1.25rem;
+	a{
+		color:$black;
+		&:hover,
+		&:active{
+			color:$hof;
+			text-decoration: none;
+		}
+	}
 	@include media-breakpoint-up(md) {
 		font-size: 1.5rem;
 	}

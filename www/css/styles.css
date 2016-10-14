@@ -6658,10 +6658,16 @@ html {
   width: 100%;
   height: 100%;
   font-family: "Circular Air Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #484848;
 }
 
 img {
   max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: #1d1d1b;
 }
 
 .sg-grid {
@@ -9090,6 +9096,7 @@ body.login {
 .dashboard-intro-content h1 {
   font-size: 4.375rem;
   line-height: 1;
+  color: white;
 }
 
 .dashboard-heading {
@@ -9111,6 +9118,15 @@ body.login {
 .event-title {
   font-family: "Circular Air Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.25rem;
+}
+
+.event-title a {
+  color: #1d1d1b;
+}
+
+.event-title a:hover, .event-title a:active {
+  color: #565A5C;
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
