@@ -33,7 +33,7 @@ select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   -webkit-text-fill-color: white;
-  -webkit-box-shadow: 0 0 0px 1000px rgba($kazan-rgb, 0.2) inset;
+  -webkit-box-shadow: 0 0 0px 1000px rgba($kazan-rgb, 0.5) inset;
 }
 
 [type="text"], [type="password"], [type="search"], [type="email"], [type="url"], [type="number"], [type="tel"], textarea, select, input[type="radio"], input[type="checkbox"] {

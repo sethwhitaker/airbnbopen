@@ -1,6 +1,6 @@
 body.single-event{
-	background: linear-gradient(135deg, #4da2ab, #711c5f) top center no-repeat scroll;
-    background-size: cover;
+	background: linear-gradient(135deg, $hackberry, lighten(desaturate($kazan, 65%),23%)) top center no-repeat scroll;
+   background-size: cover;
 }
 
 .event-intro{
