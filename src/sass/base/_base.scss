@@ -36,179 +36,19 @@ h1,h2,h3,h4,h5,h6,
 	margin-bottom: 30px;
 	padding: 10px 0
 }
-@for $i from 1 through 20 {
-   .pull-#{$i*10} {
-    	margin-top: -10px * $i;
-    	padding-top: 10px * $i;
-	}
 
-   .push-#{$i*10} {
-    	margin-top: 10px * $i;
-	}
-
-
-   .shove-#{$i*10} {
-    	margin-bottom: 10px * $i;
-	}
-
-
-   .pad-b-#{$i*10} {
-    	padding-bottom: 10px * $i;
-	}
-
-	.pad-t-#{$i*10} {
-    	padding-top: 10px * $i;
-	}
-
-	.pad-l-#{$i*10} {
-    	padding-left: 10px * $i;
-	}
-
-	.pad-r-#{$i*10} {
-    	padding-right: 10px * $i;
-	}
-}
-@media screen and (min-width:544px){
-	@for $i from 1 through 20 {
-	   .pull-sm-#{$i*10} {
-	    	margin-top: -10px * $i;
-	    	padding-top: 10px * $i;
-		}
-
-	   .push-sm-#{$i*10} {
-	    	margin-top: 10px * $i;
-		}
-
-	   .shove-sm-#{$i*10} {
-	    	margin-bottom: 10px * $i;
-		}
-
-	   .pad-sm-b-#{$i*10} {
-	    	padding-bottom: 10px * $i;
-		}
-
-		.pad-sm-t-#{$i*10} {
-	    	padding-top: 10px * $i;
-		}
-
-		.pad-sm-l-#{$i*10} {
-	    	padding-left: 10px * $i;
-		}
-
-		.pad-sm-r-#{$i*10} {
-	    	padding-right: 10px * $i;
-		}
-	}
-}
-@media screen and (min-width:768px){
-	@for $i from 1 through 20 {
-	   .pull-md-#{$i*10} {
-	    	margin-top: -10px * $i;
-	    	padding-top: 10px * $i;
-		}
-
-	   .push-md-#{$i*10} {
-	    	margin-top: 10px * $i;
-		}
-
-	   .shove-md-#{$i*10} {
-	    	margin-bottom: 10px * $i;
-		}
-
-	   .pad-md-b-#{$i*10} {
-	    	padding-bottom: 10px * $i;
-		}
-
-		.pad-md-t-#{$i*10} {
-	    	padding-top: 10px * $i;
-		}
-
-		.pad-md-l-#{$i*10} {
-	    	padding-left: 10px * $i;
-		}
-
-		.pad-md-r-#{$i*10} {
-	    	padding-right: 10px * $i;
-		}
-	}
-}
-@media screen and (min-width:992px){
-	@for $i from 1 through 20 {
-	   .pull-lg-#{$i*10} {
-	    	margin-top: -10px * $i;
-	    	padding-top: 10px * $i;
-		}
-
-	   .push-lg-#{$i*10} {
-	    	margin-top: 10px * $i;
-		}
-
-	   .shove-lg-#{$i*10} {
-	    	margin-bottom: 10px * $i;
-		}
-
-	   .pad-lg-b-#{$i*10} {
-	    	padding-bottom: 10px * $i;
-		}
-
-		.pad-lg-t-#{$i*10} {
-	    	padding-top: 10px * $i;
-		}
-
-		.pad-lg-l-#{$i*10} {
-	    	padding-left: 10px * $i;
-		}
-
-		.pad-lg-r-#{$i*10} {
-	    	padding-right: 10px * $i;
-		}
-	}
-}
-// @media screen and (min-width:1200px){
-// 	@for $i from 1 through 20 {
-// 	   .pull-xl-#{$i*10} {
-// 	    	margin-top: -10px * $i;
-// 	    	padding-top: 10px * $i;
-// 		}
-
-// 	   .push-xl-#{$i*10} {
-// 	    	margin-top: 10px * $i;
-// 		}
-
-// 	   .shove-xl-#{$i*10} {
-// 	    	margin-bottom: 10px * $i;
-// 		}
-
-// 	   .pad-xl-b-#{$i*10} {
-// 	    	padding-bottom: 10px * $i;
-// 		}
-
-// 		.pad-xl-t-#{$i*10} {
-// 	    	padding-top: 10px * $i;
-// 		}
-
-// 		.pad-xl-l-#{$i*10} {
-// 	    	padding-left: 10px * $i;
-// 		}
-
-// 		.pad-xl-r-#{$i*10} {
-// 	    	padding-right: 10px * $i;
-// 		}
-// 	}
-// }
-
-.space-1{
-    margin-bottom: 6px;
-}
-
-.space-2{
-    margin-bottom: 12px;
-}
 
 .lead{
 	font-size: 1rem;
 	@include media-breakpoint-up(md) {
 		font-size: 1.125rem;
 	}
+}
 
+.dashboard .main,
+.single-event .main {
+	padding-top: 75px;
+	@include media-breakpoint-up (md) {
+		padding-top: 98px;
+	}
 }

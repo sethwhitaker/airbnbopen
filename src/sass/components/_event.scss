@@ -1,4 +1,4 @@
-body.event{
+body.single-event{
 	background: linear-gradient(135deg, #4da2ab, #711c5f) top center no-repeat scroll;
     background-size: cover;
 }
@@ -66,5 +66,41 @@ body.event{
 	float: left;
 	& + &{
 		margin-right:0px;
+	}
+}
+
+// Events List Component
+// Event Component
+.events-list{
+	padding:15px 0;
+	@include media-breakpoint-up(md) {
+		padding:65px 0 50px;
+	}
+}
+.event{
+	margin-bottom:25px;
+	@include media-breakpoint-up(md) {
+		margin-bottom:50px;
+	}
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+.event-listing-title{
+	font-family: $font-circular-bold;
+	font-size: 1.25rem;
+	a{
+		color:$black;
+		&:hover,
+		&:active{
+			color:$hof;
+			text-decoration: none;
+		}
+	}
+	@include media-breakpoint-up(md) {
+		font-size: 1.5rem;
+	}
+	@include media-breakpoint-up(lg) {
+		font-size: 1.875rem;
 	}
 }
