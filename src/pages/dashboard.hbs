@@ -9,131 +9,191 @@ bodyClass: "dashboard"
 	<section class="dashboard-intro">
 		<div class="container">
 			<div class="dashboard-intro-content dash-max-width">
-				<h1 class="font-street-markings-clean m-b-1">HELLO <br>CATHERINE</h1>
-				<p class="lead m-b-3">Looks like you have space in your schedule! Pick from the following event types to fill it up.</p>
+				<h1 class="font-street-markings-clean text-uppercase m-b-1">Hello <br>Catherine</h1>
+				<p class="lead m-b-3">Looks like you have space in your schedule! Choose events to complete your schedule.</p>
 				<div class="clearfix dashboard-intro-cta">
-					<a href="#add-events" data-scroll-to="true" class="btn btn-primary">Add Events</a>
-					<a href="#view-itinerary" data-scroll-to="true" class="btn btn-outline-white">View Your Itinerary</a>
+					<a href="#view-schedule" data-scroll-to="true" data-scroll-offset="113" class="btn btn-primary">View Your Schedule</a>
+					<a href="#choose-events" data-scroll-to="true" data-scroll-offset="113" class="btn btn-outline-white">Choose Events</a>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section id="add-events" class="gradient-babu-beach">
+	<section id="choose-events" class="gradient-babu-beach">
 		<div class="container">
 			<div class="dashboard-heading dash-max-width">
-				<h1 class="font-street-markings-clean font-gradient">ADD <br>EVENTS</h1>
-				<p class="lead">Please select from the following types of events to fill up your schedule. Then we'll confirm it together for your official itinerary.</p>
+				<h1 class="font-street-markings-clean font-gradient text-uppercase">Choose <br>Events</h1>
+				<p class="lead">Please choose events to fill up your schedule. Then we'll confirm it together for your official schedule.</p>
 			</div>
 
 			<div id="add-accordion" role="tablist" aria-multiselectable="true">
-			  	<div class="panel">
-			    	<div class="panel-heading" role="tab" id="addHeadingOne">
-			      	<h4 class="panel-title">
-			        		<a data-toggle="collapse" href="#addCollapseOne" aria-expanded="true" aria-controls="addCollapseOne">Conversation Spaces (3 Needed)
-			        		<i class="material-icons expand-more">expand_more</i>
-			        	</a>
-			      	</h4>
-			   	</div>
-			    	<div id="addCollapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="addHeadingOne">
-		    			{{#parseJSON '{ "tab-id": "01" }'}}
+				<div class="panel">
+					<div class="panel-heading" role="tab" id="addHeading01">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" href="#addCollapse01" aria-expanded="true" aria-controls="addCollapse01">Conversation Spaces (Choose 3)
+							<i class="material-icons expand-more">expand_more</i>
+						</a>
+						</h4>
+					</div>
+					<div id="addCollapse01" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="addHeading01">
+						{{#parseJSON '{ "tab-id": "01" }'}}
 							{{>tabs}}
 						{{/parseJSON}}
-			    	</div>
-			  	</div>
-			  	<div class="panel">
-			    	<div class="panel-heading" role="tab" id="addHeadingTwo">
-				      <h4 class="panel-title">
-				        <a class="collapsed" data-toggle="collapse" href="#addCollapseTwo" aria-expanded="false" aria-controls="addCollapseTwo">
-				           	Talks (1 Needed)
-				            <i class="material-icons expand-more">expand_more</i>
-				        </a>
-				      </h4>
-			    	</div>
-			   	<div id="addCollapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="addHeadingTwo">
-		   			{{#parseJSON '{ "tab-id": "02" }'}}
+					</div>
+				</div>
+				<div class="panel">
+					<div class="panel-heading" role="tab" id="addHeading02">
+						<h4 class="panel-title">
+						  <a class="collapsed" data-toggle="collapse" href="#addCollapse02" aria-expanded="false" aria-controls="addCollapse02">
+								Talks (Choose 1)
+								<i class="material-icons expand-more">expand_more</i>
+						  </a>
+						</h4>
+					</div>
+					<div id="addCollapse02" class="panel-collapse collapse" role="tabpanel" aria-labelledby="addHeading02">
+						{{#parseJSON '{ "tab-id": "02" }'}}
 							{{>tabs}}
 						{{/parseJSON}}
-			    	</div>
-			  	</div>
-			  	<div class="panel">
-			    	<div class="panel-heading" role="tab" id="addHeadingThree">
-				      <h4 class="panel-title">
-				        <a class="collapsed" data-toggle="collapse" href="#addCollapseThree" aria-expanded="false" aria-controls="addCollapseThree">
-				           	Open Spotlight (2 Needed)
-				            <i class="material-icons expand-more">expand_more</i>
-				        </a>
-				      </h4>
-			    	</div>
-			   	<div id="addCollapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="addHeadingThree">
-		   			{{#parseJSON '{ "tab-id": "03" }'}}
+					</div>
+				</div>
+				<div class="panel">
+					<div class="panel-heading" role="tab" id="addHeading03">
+						<h4 class="panel-title">
+						  <a class="collapsed" data-toggle="collapse" href="#addCollapse03" aria-expanded="false" aria-controls="addCollapse03">
+								Open Spotlight (Choose 2)
+								<i class="material-icons expand-more">expand_more</i>
+						  </a>
+						</h4>
+					</div>
+					<div id="addCollapse03" class="panel-collapse collapse" role="tabpanel" aria-labelledby="addHeading03">
+						{{#parseJSON '{ "tab-id": "03" }'}}
 							{{>tabs}}
 						{{/parseJSON}}
-			    	</div>
-			  	</div>
+					</div>
+				</div>
+				<div class="panel">
+					<div class="panel-heading" role="tab" id="addHeading04">
+						<h4 class="panel-title">
+						  <a class="collapsed" data-toggle="collapse" href="#addCollapse04" aria-expanded="false" aria-controls="addCollapse04">
+								Excursions (Choose 2)
+								<i class="material-icons expand-more">expand_more</i>
+						  </a>
+						</h4>
+					</div>
+					<div id="addCollapse04" class="panel-collapse collapse" role="tabpanel" aria-labelledby="addHeading04">
+						{{#parseJSON '{ "tab-id": "04" }'}}
+							{{>tabs}}
+						{{/parseJSON}}
+					</div>
+				</div>
+				<div class="panel">
+					<div class="panel-heading" role="tab" id="addHeading05">
+						<h4 class="panel-title">
+						  <a class="collapsed" data-toggle="collapse" href="#addCollapse05" aria-expanded="false" aria-controls="addCollapse05">
+								Community Dinners (Choose 1)
+								<i class="material-icons expand-more">expand_more</i>
+						  </a>
+						</h4>
+					</div>
+					<div id="addCollapse05" class="panel-collapse collapse" role="tabpanel" aria-labelledby="addHeading05">
+						{{#parseJSON '{ "tab-id": "05" }'}}
+							{{>tabs}}
+						{{/parseJSON}}
+					</div>
+				</div>
+				<div class="panel">
+					<div class="panel-heading" role="tab" id="addHeading06">
+						<h4 class="panel-title">
+						  <a class="collapsed" data-toggle="collapse" href="#addCollapse06" aria-expanded="false" aria-controls="addCollapse06">
+								Open Houses (Choose 3)
+								<i class="material-icons expand-more">expand_more</i>
+						  </a>
+						</h4>
+					</div>
+					<div id="addCollapse06" class="panel-collapse collapse" role="tabpanel" aria-labelledby="addHeading06">
+						{{#parseJSON '{ "tab-id": "06" }'}}
+							{{>tabs}}
+						{{/parseJSON}}
+					</div>
+				</div>
+				<div class="panel">
+					<div class="panel-heading" role="tab" id="addHeading07">
+						<h4 class="panel-title">
+						  <a class="collapsed" data-toggle="collapse" href="#addCollapse07" aria-expanded="false" aria-controls="addCollapse07">
+								Neighborhood Explorations (Choose 2)
+								<i class="material-icons expand-more">expand_more</i>
+						  </a>
+						</h4>
+					</div>
+					<div id="addCollapse07" class="panel-collapse collapse" role="tabpanel" aria-labelledby="addHeading07">
+						{{#parseJSON '{ "tab-id": "07" }'}}
+							{{>tabs}}
+						{{/parseJSON}}
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
 
-	<section id="view-itinerary" class="gradient-beach-rausch">
+	<section id="view-schedule" class="gradient-beach-rausch">
 		<div class="container">
 			<div class="dashboard-heading dash-max-width">
-				<h1 class="font-street-markings-clean font-gradient">YOUR <br>ITINERARY</h1>
-				<p class="lead">You still have more space! Select more events to this tentative list before confirming your official itinerary.</p>
+				<h1 class="font-street-markings-clean font-gradient text-uppercase">Your <br>Schedule</h1>
+				<p class="lead">You still have more space! Select more events to this tentative list before confirming your official schedule.</p>
 			</div>
 
-			<div id="itinerary-accordion" role="tablist" aria-multiselectable="true">
-			  	<div class="panel">
-			    	<div class="panel-heading" role="tab" id="headingWed">
-			      	<h4 class="panel-title">
-			        		<a data-toggle="collapse" href="#collapseWed" aria-expanded="true" aria-controls="collapseWed">Wednesday, November 16
-			        		<i class="material-icons expand-more">expand_more</i>
-			        	</a>
-			      	</h4>
-			   	</div>
-			    	<div id="collapseWed" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingWed">
-		    			{{>tabs-itinerary}}
-			    	</div>
-			  	</div>
-			  	<div class="panel">
-			    	<div class="panel-heading" role="tab" id="headingThurs">
-				      <h4 class="panel-title">
-				        <a class="collapsed" data-toggle="collapse" href="#collapseThurs" aria-expanded="false" aria-controls="collapseThurs">
-				           	Thursday, November 17
-				            <i class="material-icons expand-more">expand_more</i>
-				        </a>
-				      </h4>
-			    	</div>
-			   	<div id="collapseThurs" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThurs">
-		   			{{>tabs-itinerary}}
-			    	</div>
-			  	</div>
-			  	<div class="panel">
-			    	<div class="panel-heading" role="tab" id="headingFri">
-				      <h4 class="panel-title">
-				        <a class="collapsed" data-toggle="collapse" href="#collapseFri" aria-expanded="false" aria-controls="collapseFri">
-				           	Friday, November 18
-				            <i class="material-icons expand-more">expand_more</i>
-				        </a>
-				      </h4>
-			    	</div>
-			   	<div id="collapseFri" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFri">
-		   			{{>tabs-itinerary}}
-			    	</div>
-			  	</div>
-			  	<div class="panel">
-			    	<div class="panel-heading" role="tab" id="headingSat">
-				      <h4 class="panel-title">
-				        <a class="collapsed" data-toggle="collapse" href="#collapseSat" aria-expanded="false" aria-controls="collapseSat">
-				           	Saturday, November 19
-				            <i class="material-icons expand-more">expand_more</i>
-				        </a>
-				      </h4>
-			    	</div>
-			   	<div id="collapseSat" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSat">
-		   			{{>tabs-itinerary}}
-			    	</div>
-			  	</div>
+			<div id="schedule-accordion" role="tablist" aria-multiselectable="true">
+				<div class="panel">
+					<div class="panel-heading" role="tab" id="headingWed">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" href="#collapseWed" aria-expanded="true" aria-controls="collapseWed">Wednesday, November 16
+							<i class="material-icons expand-more">expand_more</i>
+						</a>
+						</h4>
+					</div>
+					<div id="collapseWed" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingWed">
+						{{>tabs-schedule}}
+					</div>
+				</div>
+				<div class="panel">
+					<div class="panel-heading" role="tab" id="headingThurs">
+						<h4 class="panel-title">
+						  <a class="collapsed" data-toggle="collapse" href="#collapseThurs" aria-expanded="false" aria-controls="collapseThurs">
+								Thursday, November 17
+								<i class="material-icons expand-more">expand_more</i>
+						  </a>
+						</h4>
+					</div>
+					<div id="collapseThurs" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThurs">
+						{{>tabs-schedule}}
+					</div>
+				</div>
+				<div class="panel">
+					<div class="panel-heading" role="tab" id="headingFri">
+						<h4 class="panel-title">
+						  <a class="collapsed" data-toggle="collapse" href="#collapseFri" aria-expanded="false" aria-controls="collapseFri">
+								Friday, November 18
+								<i class="material-icons expand-more">expand_more</i>
+						  </a>
+						</h4>
+					</div>
+					<div id="collapseFri" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFri">
+						{{>tabs-schedule}}
+					</div>
+				</div>
+				<div class="panel">
+					<div class="panel-heading" role="tab" id="headingSat">
+						<h4 class="panel-title">
+						  <a class="collapsed" data-toggle="collapse" href="#collapseSat" aria-expanded="false" aria-controls="collapseSat">
+								Saturday, November 19
+								<i class="material-icons expand-more">expand_more</i>
+						  </a>
+						</h4>
+					</div>
+					<div id="collapseSat" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSat">
+						{{>tabs-schedule}}
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
