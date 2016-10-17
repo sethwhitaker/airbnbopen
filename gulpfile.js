@@ -47,8 +47,8 @@ gulp.task('uglify', function (cb) {
 gulp.task('dist-copy', function (cb) {
   gulp.src([
     'www/js/vendor/*.js',
-    'www/js/vendor/**/dist/*.js',
-    'www/js/vendor/**/dist/*.js.map',
+    'www/js/vendor/**/*.js',
+    'www/js/vendor/**/*.map',
     'www/fonts/**',
     'www/*.ico'
   ], {base: "www"})
@@ -77,6 +77,7 @@ gulp.task('load', function(cb) {
   app.docs('src/style-guide/**/*.hbs');
   cb();
 });
+
 
 //Assemble Tasks
 app.task('pages', function() {
