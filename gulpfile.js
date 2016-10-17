@@ -36,8 +36,7 @@ gulp.task('assemble:watch', function () {
 gulp.task('uglify', function (cb) {
   pump([
         gulp.src([
-          'www/js/main.js',
-          'www/js/vendor/gasp.js'
+          'www/js/main.js'
         ], {base:'www'}),
         uglify(),
         gulp.dest('dist')
@@ -48,7 +47,6 @@ gulp.task('uglify', function (cb) {
 gulp.task('dist-copy', function (cb) {
   gulp.src([
     'www/js/vendor/*.js',
-    '!www/js/vendor/gasp.js',
     'www/js/vendor/**/dist/*.js',
     'www/js/vendor/**/dist/*.js.map',
     'www/fonts/**',
