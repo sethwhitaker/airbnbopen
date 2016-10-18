@@ -49,6 +49,12 @@ body.single-event{
 
 .event-details{
 	font-family: $font-circular-medium;
+	@include media-breakpoint-only(xs) {
+		font-size: 12px;
+	}
+	@include media-breakpoint-only(sm) {
+		font-size: 14px;
+	}
 }
 
 .back-arrow{
@@ -66,6 +72,14 @@ body.single-event{
 	float: left;
 	& + &{
 		margin-right:0px;
+	}
+}
+.event-cta-action{
+	@include media-breakpoint-only(xs) {
+		font-size: 12px;
+	}
+	@include media-breakpoint-only(sm) {
+		font-size: 14px;
 	}
 }
 
@@ -94,7 +108,7 @@ body.single-event{
 		&:hover,
 		&:active{
 			color:$hof;
-			text-decoration: none;
+			// text-decoration: none;
 		}
 	}
 	@include media-breakpoint-up(md) {

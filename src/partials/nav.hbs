@@ -10,15 +10,18 @@
 		 	<div class="nav-list collapse navbar-toggleable-sm" id="header-navbar">
 		    	<ul class="nav navbar-nav">
 		    		{{#is bodyClass "dashboard"}}
-		      	<li class="nav-item ">
-		        		<a class="nav-link active" href="#choose-events" data-scroll-to="true" data-scroll-offset="113">Choose Events</a>
-		      	</li>
 		      	<li class="nav-item">
-		        		<a class="nav-link" href="#view-schedule" data-scroll-to="true" data-scroll-offset="113">Your Schedule</a>
+		        		<a class="nav-link active" href="#view-schedule" data-scroll-to="true" data-scroll-offset="113">Your Schedule</a>
+		      	</li>
+		      	<li class="nav-item ">
+		        		<a class="nav-link" href="#choose-events" data-scroll-to="true" data-scroll-offset="113">Choose Events</a>
 		      	</li>
 		      	{{else}}
 		      	<li class="nav-item">
 		        		<a class="nav-link hidden-md-up" href="/dashboard.html">Dashboard</a>
+		      	</li>
+					<li class="nav-item">
+		        		<a class="nav-link hidden-md-up" href="/schedule.html">Schedule</a>
 		      	</li>
 		      	{{/is}}
 		    	</ul>

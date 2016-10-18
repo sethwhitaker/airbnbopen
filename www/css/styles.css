@@ -4967,13 +4967,16 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .dashboard .main,
-.single-event .main {
+.single-event .main,
+.schedule .main {
   padding-top: 75px;
+  padding-bottom: 100px;
 }
 
 @media (min-width: 768px) {
   .dashboard .main,
-  .single-event .main {
+  .single-event .main,
+  .schedule .main {
     padding-top: 98px;
   }
 }
@@ -5592,6 +5595,18 @@ body.single-event {
   font-family: "Circular Air Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+@media (max-width: 543px) {
+  .event-details {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 544px) and (max-width: 767px) {
+  .event-details {
+    font-size: 14px;
+  }
+}
+
 .back-arrow {
   font-size: 50px;
   color: #ffffff;
@@ -5610,6 +5625,18 @@ body.single-event {
 
 .event-cta-btn + .event-cta-btn {
   margin-right: 0px;
+}
+
+@media (max-width: 543px) {
+  .event-cta-action {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 544px) and (max-width: 767px) {
+  .event-cta-action {
+    font-size: 14px;
+  }
 }
 
 .events-list {
@@ -5647,7 +5674,6 @@ body.single-event {
 
 .event-listing-title a:hover, .event-listing-title a:active {
   color: #565A5C;
-  text-decoration: none;
 }
 
 @media (min-width: 768px) {

@@ -46,8 +46,10 @@ h1,h2,h3,h4,h5,h6,
 }
 
 .dashboard .main,
-.single-event .main {
+.single-event .main,
+.schedule .main {
 	padding-top: 75px;
+	padding-bottom: 100px;
 	@include media-breakpoint-up (md) {
 		padding-top: 98px;
 	}

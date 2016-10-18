@@ -15,7 +15,7 @@
   <meta content="Airbnb Open" property="og:title">
   <meta content="http://airbnbopen.com/" property="og:url">
 
-  <title>Dashboard - Airbnb Open 2016</title>
+  <title>Your Schedule - Airbnb Open 2016</title>
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico?ver=2.0">
@@ -28,7 +28,7 @@
 
 </head>
 
-<body class="dashboard animated fadeIn" data-spy="scroll" data-target="#header-navbar" data-offset="113">
+<body class="schedule animated fadeIn" data-spy="scroll" data-target="#header-navbar" data-offset="113">
 <a id="top"></a><header class="header">
 	<div class="container container-wide">
 		<nav class="navbar row">
@@ -41,10 +41,10 @@
 		 	<div class="nav-list collapse navbar-toggleable-sm" id="header-navbar">
 		    	<ul class="nav navbar-nav">
 		      	<li class="nav-item">
-		        		<a class="nav-link active" href="#view-schedule" data-scroll-to="true" data-scroll-offset="113">Your Schedule</a>
+		        		<a class="nav-link hidden-md-up" href="/dashboard.html">Dashboard</a>
 		      	</li>
-		      	<li class="nav-item">
-		        		<a class="nav-link" href="#choose-events" data-scroll-to="true" data-scroll-offset="113">Choose Events</a>
+					<li class="nav-item">
+		        		<a class="nav-link hidden-md-up" href="/schedule.html">Schedule</a>
 		      	</li>
 		    	</ul>
 		  	</div>
@@ -53,19 +53,6 @@
 	</div>
 </header>
 <main class="main">
-
-	<section class="dashboard-intro">
-		<div class="container">
-			<div class="dashboard-intro-content dash-max-width">
-				<h1 class="font-street-markings-clean text-uppercase m-b-1">Hello <br>Catherine</h1>
-				<p class="lead m-b-3">Looks like you have space in your schedule! Choose events to complete your schedule.</p>
-				<div class="clearfix dashboard-intro-cta">
-					<a href="#view-schedule" data-scroll-to="true" data-scroll-offset="113" class="btn btn-primary">View Your Schedule</a>
-					<a href="#choose-events" data-scroll-to="true" data-scroll-offset="113" class="btn btn-outline-white">Choose Events</a>
-				</div>
-			</div>
-		</div>
-	</section>
 
 	<section id="view-schedule" class="gradient-beach-rausch">
 		<div class="container">
@@ -254,127 +241,7 @@
 		</div>
 	</section>
 
-	<section id="choose-events" class="gradient-babu-beach">
-		<div class="container">
-			<div class="dashboard-heading dash-max-width">
-				<h1 class="font-street-markings-clean font-gradient text-uppercase">Choose <br>Events</h1>
-				<p class="lead">Please choose events to fill up your schedule. Then we'll confirm it together for your official schedule.</p>
-			</div>
-
-			<div id="add-accordion" role="tablist" aria-multiselectable="true">
-				<div class="panel">
-					<div class="panel-heading" role="tab" id="addHeading01">
-						<h4 class="panel-title">
-							<a data-toggle="collapse" href="#addCollapse01" aria-expanded="true" aria-controls="addCollapse01">Keynote Sessions (Choose 2)
-							<i class="material-icons expand-more">expand_more</i>
-						</a>
-						</h4>
-					</div>
-					<div id="addCollapse01" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="addHeading01">
-						<div class="events-list">
-								<div class="event row flex-items-md-middle">
-									<div class="col-md-5 col-lg-6 col-xl-5 offset-xl-1">
-										<h3 class="event-listing-title"><a href="/event.html">Influence the Future Product; Give Your Feedback - Workshop</a></h3>
-									</div>
-								
-									<div class="col-xs-7 col-md-4 col-xl-3">
-										<p class="event-details">Host Clubhouse @ Clifton's<br> 3:00 PM – 3:45 PM PST<br> Thursday, November 17</p>
-									</div>
-								
-									<div class="col-xs-5 col-md-3 col-lg-2">
-										<a href="#" class="btn btn-outline-kazan btn-block event-cta-action">Add Event</a>
-									</div>
-								</div>
-								<div class="event row flex-items-md-middle">
-									<div class="col-md-5 col-lg-6 col-xl-5 offset-xl-1">
-										<h3 class="event-listing-title"><a href="/event.html">Designing the New Mobile Experience wih Hosts</a></h3>
-									</div>
-								
-									<div class="col-xs-7 col-md-4 col-xl-3">
-										<p class="event-details">Orpheum Theatre <br>5:00 PM – 6:00 PM PST<br> Thursday, November 17</p>
-									</div>
-								
-									<div class="col-xs-5 col-md-3 col-lg-2">
-										<a href="#" class="btn btn-outline-kazan btn-block event-cta-action">Remove Event</a>
-									</div>
-								</div>
-								<div class="event row flex-items-md-middle">
-									<div class="col-md-5 col-lg-6 col-xl-5 offset-xl-1">
-										<h3 class="event-listing-title"><a href="/event.html">Open Book Conversations</a></h3>
-									</div>
-								
-									<div class="col-xs-7 col-md-4 col-xl-3">
-										<p class="event-details">BNKR <br>11:00 AM – 6:00 PM PST<br> Friday, November 18</p>
-									</div>
-								
-									<div class="col-xs-5 col-md-3 col-lg-2">
-										<a href="#" class="btn btn-outline-kazan btn-block event-cta-action">Add Event</a>
-									</div>
-								</div>
-						</div>					</div>
-				</div>
-				<div class="panel">
-					<div class="panel-heading" role="tab" id="addHeading02">
-						<h4 class="panel-title">
-						  <a class="collapsed" data-toggle="collapse" href="#addCollapse02" aria-expanded="false" aria-controls="addCollapse02">
-								Activities (Choose 1)
-								<i class="material-icons expand-more">expand_more</i>
-						  </a>
-						</h4>
-					</div>
-					<div id="addCollapse02" class="panel-collapse collapse" role="tabpanel" aria-labelledby="addHeading02">
-						<div class="events-list">
-								<div class="event row flex-items-md-middle">
-									<div class="col-md-5 col-lg-6 col-xl-5 offset-xl-1">
-										<h3 class="event-listing-title"><a href="/event.html">Influence the Future Product; Give Your Feedback - Workshop</a></h3>
-									</div>
-								
-									<div class="col-xs-7 col-md-4 col-xl-3">
-										<p class="event-details">Host Clubhouse @ Clifton's<br> 3:00 PM – 3:45 PM PST<br> Thursday, November 17</p>
-									</div>
-								
-									<div class="col-xs-5 col-md-3 col-lg-2">
-										<a href="#" class="btn btn-outline-kazan btn-block event-cta-action">Add Event</a>
-									</div>
-								</div>
-								<div class="event row flex-items-md-middle">
-									<div class="col-md-5 col-lg-6 col-xl-5 offset-xl-1">
-										<h3 class="event-listing-title"><a href="/event.html">Designing the New Mobile Experience wih Hosts</a></h3>
-									</div>
-								
-									<div class="col-xs-7 col-md-4 col-xl-3">
-										<p class="event-details">Orpheum Theatre <br>5:00 PM – 6:00 PM PST<br> Thursday, November 17</p>
-									</div>
-								
-									<div class="col-xs-5 col-md-3 col-lg-2">
-										<a href="#" class="btn btn-outline-kazan btn-block event-cta-action">Remove Event</a>
-									</div>
-								</div>
-								<div class="event row flex-items-md-middle">
-									<div class="col-md-5 col-lg-6 col-xl-5 offset-xl-1">
-										<h3 class="event-listing-title"><a href="/event.html">Open Book Conversations</a></h3>
-									</div>
-								
-									<div class="col-xs-7 col-md-4 col-xl-3">
-										<p class="event-details">BNKR <br>11:00 AM – 6:00 PM PST<br> Friday, November 18</p>
-									</div>
-								
-									<div class="col-xs-5 col-md-3 col-lg-2">
-										<a href="#" class="btn btn-outline-kazan btn-block event-cta-action">Add Event</a>
-									</div>
-								</div>
-						</div>					</div>
-				</div>
-			</div>
-
-			<p class="text-xs-center">
-				<a href="#" class="btn btn-primary">Submit</a>
-			</p>
-		</div>
-	</section>
-
 </main>
-
 
   <script src="/js/vendor/jquery/jquery.min.js"></script>
   <script src="/js/vendor/bootstrap/bootstrap.min.js"></script>
