@@ -5560,6 +5560,10 @@ body.signup .login-panel {
   }
 }
 
+body.account .login-panel {
+  margin-top: 30px;
+}
+
 .login-header {
   color: white;
 }
