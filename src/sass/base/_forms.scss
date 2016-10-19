@@ -17,7 +17,7 @@
 }
 
 input, textarea, .input-prefix, .input-suffix {
-    font-family: $font-circular-book;
+    font-family: $font-circular-light;
 }
 
 
@@ -33,7 +33,7 @@ select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   -webkit-text-fill-color: white;
-  -webkit-box-shadow: 0 0 0px 1000px rgba($kazan-rgb, 0.5) inset;
+  -webkit-box-shadow: 0 0 0px 1000px rgba($kazan, 0.5) inset;
 }
 
 [type="text"], [type="password"], [type="search"], [type="email"], [type="url"], [type="number"], [type="tel"], textarea, select, input[type="radio"], input[type="checkbox"] {
@@ -52,7 +52,7 @@ select:-webkit-autofill:focus {
     width: 100% !important;
     color:white;
     &:focus{
-        border-bottom: 1px solid $kazan-rgb;
+        border-bottom: 1px solid $kazan;
         outline: none;
     }
 }

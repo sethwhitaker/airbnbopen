@@ -4981,6 +4981,34 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
+.gradient-silverlake {
+  background: -webkit-linear-gradient(120deg, #79e7df, #79e7df 23%, #ffc333) top center no-repeat scroll;
+  background: -moz-linear-gradient(120deg, #79e7df, #79e7df 23%, #ffc333) top center no-repeat scroll;
+  background: linear-gradient(120deg, #79e7df, #79e7df 23%, #ffc333) top center no-repeat scroll;
+  background-size: cover;
+}
+
+.gradient-sunset-boulevard {
+  background: -webkit-linear-gradient(120deg, #ffd266, #FF5A5F) top center no-repeat scroll;
+  background: -moz-linear-gradient(120deg, #ffd266, #FF5A5F) top center no-repeat scroll;
+  background: linear-gradient(120deg, #ffd266, #FF5A5F) top center no-repeat scroll;
+  background-size: cover;
+}
+
+.gradient-santa-monica {
+  background: -webkit-linear-gradient(120deg, #fe898d, #7B0051) top center no-repeat scroll;
+  background: -moz-linear-gradient(120deg, #fe898d, #7B0051) top center no-repeat scroll;
+  background: linear-gradient(120deg, #fe898d, #7B0051) top center no-repeat scroll;
+  background-size: cover;
+}
+
+.gradient-downtown-lights {
+  background: -webkit-linear-gradient(120deg, #7B0051, #52a2aa) top center no-repeat scroll;
+  background: -moz-linear-gradient(120deg, #7B0051, #52a2aa) top center no-repeat scroll;
+  background: linear-gradient(120deg, #7B0051, #52a2aa) top center no-repeat scroll;
+  background-size: cover;
+}
+
 ::-webkit-input-placeholder {
   color: white;
 }
@@ -5000,7 +5028,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 input, textarea, .input-prefix, .input-suffix {
-  font-family: "Circular Air Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Circular Air Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* Change Autocomplete styles in Chrome*/
@@ -5036,7 +5064,7 @@ select:-webkit-autofill:focus {
 }
 
 .decorative-input:focus {
-  border-bottom: 1px solid #007a87;
+  border-bottom: 1px solid #007A87;
   outline: none;
 }
 
@@ -5508,19 +5536,27 @@ select:-webkit-autofill:focus {
   }
 }
 
-body.login {
-  background: linear-gradient(135deg, #38fff0, #ffd266) top center no-repeat scroll;
-  background-size: cover;
-}
-
 .login-panel {
   max-width: 420px;
+}
+
+body.login .login-panel {
   margin-top: 50px;
 }
 
 @media screen and (min-width: 768px) {
-  .login-panel {
+  body.login .login-panel {
     margin-top: 200px;
+  }
+}
+
+body.signup .login-panel {
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  body.signup .login-panel {
+    margin-top: 100px;
   }
 }
 
@@ -5537,11 +5573,6 @@ body.login {
 .logo-login {
   display: inline-block;
   margin-top: 30px;
-}
-
-body.single-event {
-  background: linear-gradient(135deg, #7B0051, #52a2aa) top center no-repeat scroll;
-  background-size: cover;
 }
 
 .event-intro {

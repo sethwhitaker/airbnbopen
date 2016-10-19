@@ -54,3 +54,30 @@ h1,h2,h3,h4,h5,h6,
 		padding-top: 98px;
 	}
 }
+
+
+//#38fff0, #ffd266
+.gradient-silverlake{
+	background: -webkit-linear-gradient(120deg, $babu-70, $babu-70 23%, $beach-80) top center no-repeat scroll;
+	background: -moz-linear-gradient(120deg, $babu-70, $babu-70 23%, $beach-80) top center no-repeat scroll;
+	background: linear-gradient(120deg, $babu-70, $babu-70 23%, $beach-80) top center no-repeat scroll;
+   background-size: cover;
+}
+.gradient-sunset-boulevard{
+	background: -webkit-linear-gradient(120deg, $beach-60, $rausch) top center no-repeat scroll;
+	background: -moz-linear-gradient(120deg, $beach-60, $rausch) top center no-repeat scroll;
+	background: linear-gradient(120deg, $beach-60, $rausch) top center no-repeat scroll;
+   background-size: cover;
+}
+.gradient-santa-monica{
+	background: -webkit-linear-gradient(120deg, $rausch-80, $hackberry) top center no-repeat scroll;
+	background: -moz-linear-gradient(120deg, $rausch-80, $hackberry) top center no-repeat scroll;
+	background: linear-gradient(120deg, $rausch-80, $hackberry) top center no-repeat scroll;
+   background-size: cover;
+}
+.gradient-downtown-lights{
+	background: -webkit-linear-gradient(120deg, $hackberry, $kazan-70) top center no-repeat scroll;
+	background: -moz-linear-gradient(120deg, $hackberry, $kazan-70) top center no-repeat scroll;
+	background: linear-gradient(120deg, $hackberry, $kazan-70) top center no-repeat scroll;
+   background-size: cover;
+}
