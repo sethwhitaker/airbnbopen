@@ -1,0 +1,36 @@
+//alert
+.alert {
+	border: none;
+	border-radius: 0;
+	padding: 1.75rem 0;
+	margin-bottom: 2.5rem;
+	text-align: center;
+	font-family: $font-circular-light;
+	color: white;
+	@include media-breakpoint-up(md) {
+		font-size: 1.125rem;
+	}
+}
+.alert-success {
+	background-color: $lima;
+}
+.alert-info {
+	background-color: $kazan;
+}
+.alert-warning {
+	background-color: $beach;
+}
+.alert-error {
+	background-color: $nightfall;
+}
+.alert-danger {
+	background-color: $rausch;
+}
+
+.alert-dismissible .close {
+   color: white;
+   opacity: 1;
+   text-shadow: none;
+   font-size: 1.75rem;
+   right: auto;
+}

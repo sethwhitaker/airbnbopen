@@ -89,7 +89,18 @@ bodyClass: "dashboard"
 				<p class="lead">Please choose events to fill up your schedule. Then we'll confirm it together for your official schedule.</p>
 				<a href="#" class="btn btn-primary btn-submit-itinerary">Submit Itinerary</a>
 			</div>
+		</div>
 
+		<div class="alert alert-error alert-dismissible fade in" role="alert">
+			<div class="container">
+			  	<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			    	<span aria-hidden="true">&times;</span>
+			  	</button>
+		  		Please correct the number of events you’ve selected before continuing.
+			</div>
+		</div>
+
+		<div class="container">
 			<h2 class="lined-heading m-b-3">Keynote Sessions (Choose 2)</h2>
 			<div id="keynote-accordion" class="p-b-3 m-b-3" role="tablist" aria-multiselectable="true">
 				{{#parseJSON '{ "id": "01", "name": "keynote","title": "Activites", "expanded": true }'}}

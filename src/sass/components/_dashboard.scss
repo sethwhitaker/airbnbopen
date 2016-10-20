@@ -1,16 +1,16 @@
 //Dashboard
 .dashboard-intro{
 	color:white;
-	background: #2b011c;
+	background: $nightfall;
 	@include media-breakpoint-up(md) {
-		background: #2b011c url(/img/backgrounds/dashboard-md.jpg) center center repeat-x scroll;
+		background: $nightfall url(/img/backgrounds/dashboard-md.jpg) center center repeat-x scroll;
 		min-height: 600px;
 	}
 	@include media-breakpoint-up(lg) {
-		background: #2b011c url(/img/backgrounds/dashboard-lg.jpg) center center repeat-x scroll;
+		background: $nightfall url(/img/backgrounds/dashboard-lg.jpg) center center repeat-x scroll;
 	}
 	@include media-breakpoint-up(xl) {
-		background: #2b011c url(/img/backgrounds/dashboard-xl.jpg) center center repeat-x scroll;
+		background: $nightfall url(/img/backgrounds/dashboard-xl.jpg) center center repeat-x scroll;
 
 	}
 }
@@ -48,7 +48,7 @@
 .dashboard-heading{
 	margin:40px 0;
 	@include media-breakpoint-up(md) {
-		margin:125px 0 70px;
+		margin:125px 0 2.5rem;
 		> h1{
 			font-size: 4.375rem;
 		}

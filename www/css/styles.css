@@ -5728,25 +5728,25 @@ body.account .login-panel {
 
 .dashboard-intro {
   color: white;
-  background: #2b011c;
+  background: #2b001d;
 }
 
 @media (min-width: 768px) {
   .dashboard-intro {
-    background: #2b011c url(/img/backgrounds/dashboard-md.jpg) center center repeat-x scroll;
+    background: #2b001d url(/img/backgrounds/dashboard-md.jpg) center center repeat-x scroll;
     min-height: 600px;
   }
 }
 
 @media (min-width: 992px) {
   .dashboard-intro {
-    background: #2b011c url(/img/backgrounds/dashboard-lg.jpg) center center repeat-x scroll;
+    background: #2b001d url(/img/backgrounds/dashboard-lg.jpg) center center repeat-x scroll;
   }
 }
 
 @media (min-width: 1200px) {
   .dashboard-intro {
-    background: #2b011c url(/img/backgrounds/dashboard-xl.jpg) center center repeat-x scroll;
+    background: #2b001d url(/img/backgrounds/dashboard-xl.jpg) center center repeat-x scroll;
   }
 }
 
@@ -5794,7 +5794,7 @@ body.account .login-panel {
 
 @media (min-width: 768px) {
   .dashboard-heading {
-    margin: 125px 0 70px;
+    margin: 125px 0 2.5rem;
   }
   .dashboard-heading > h1 {
     font-size: 4.375rem;
@@ -5941,4 +5941,48 @@ body.account .login-panel {
 
 .panel-title a.collapsed .expand-more {
   transform: rotate(180deg) translateY(50%);
+}
+
+.alert {
+  border: none;
+  border-radius: 0;
+  padding: 1.75rem 0;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-family: "Circular Air Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .alert {
+    font-size: 1.125rem;
+  }
+}
+
+.alert-success {
+  background-color: #8CE071;
+}
+
+.alert-info {
+  background-color: #007A87;
+}
+
+.alert-warning {
+  background-color: #FFB400;
+}
+
+.alert-error {
+  background-color: #2b001d;
+}
+
+.alert-danger {
+  background-color: #FF5A5F;
+}
+
+.alert-dismissible .close {
+  color: white;
+  opacity: 1;
+  text-shadow: none;
+  font-size: 1.75rem;
+  right: auto;
 }
