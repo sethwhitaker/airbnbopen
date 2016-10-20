@@ -99,16 +99,16 @@
 .font-gradient{
   display: inline-block;
   .gradient-babu-beach &{
-    background: -webkit-linear-gradient(135deg, $babu, $beach);
-    background: -0-linear-gradient(135deg, $babu, $beach);
-    background: linear-gradient(135deg, $babu, $beach);
+    background: -webkit-linear-gradient(120deg, $babu-70, $beach 80%);
+    background: -moz-linear-gradient(120deg, $babu-70, $beach 80%);
+    background: linear-gradient(120deg, $babu-70, $beach 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .gradient-beach-rausch &{
-    background: -webkit-linear-gradient(135deg, $beach, $rausch);
-    background: -0-linear-gradient(135deg, $beach, $rausch);
-    background: linear-gradient(135deg, $beach, $rausch);
+    background: -webkit-linear-gradient(120deg, $beach-60, $rausch);
+    background: -moz-linear-gradient(120deg, $beach-60, $rausch);
+    background: linear-gradient(120deg, $beach-60, $rausch);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }

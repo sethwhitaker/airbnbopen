@@ -20,7 +20,7 @@ bodyClass: "dashboard"
 	</section>
 
 	<section id="view-schedule" class="gradient-beach-rausch">
-		<div class="container">
+		<div class="container dashboard-event-viewer">
 			<div class="dashboard-heading dash-max-width">
 				<h1 class="font-street-markings-clean font-gradient text-uppercase">Your <br>Schedule</h1>
 				<p class="lead">You still have more space! Select more events to this tentative list before confirming your official schedule.</p>
@@ -29,7 +29,7 @@ bodyClass: "dashboard"
 			<div id="schedule-accordion" role="tablist" aria-multiselectable="true">
 				<div class="panel">
 					<div class="panel-heading" role="tab" id="headingWed">
-						<h4 class="panel-title">
+						<h3 class="panel-title">
 							<a data-toggle="collapse" href="#collapseWed" aria-expanded="true" aria-controls="collapseWed">Wednesday, November 16
 							<i class="material-icons expand-more">expand_more</i>
 						</a>
@@ -41,7 +41,7 @@ bodyClass: "dashboard"
 				</div>
 				<div class="panel">
 					<div class="panel-heading" role="tab" id="headingThurs">
-						<h4 class="panel-title">
+						<h3 class="panel-title">
 						  <a class="collapsed" data-toggle="collapse" href="#collapseThurs" aria-expanded="false" aria-controls="collapseThurs">
 								Thursday, November 17
 								<i class="material-icons expand-more">expand_more</i>
@@ -54,7 +54,7 @@ bodyClass: "dashboard"
 				</div>
 				<div class="panel">
 					<div class="panel-heading" role="tab" id="headingFri">
-						<h4 class="panel-title">
+						<h3 class="panel-title">
 						  <a class="collapsed" data-toggle="collapse" href="#collapseFri" aria-expanded="false" aria-controls="collapseFri">
 								Friday, November 18
 								<i class="material-icons expand-more">expand_more</i>
@@ -67,7 +67,7 @@ bodyClass: "dashboard"
 				</div>
 				<div class="panel">
 					<div class="panel-heading" role="tab" id="headingSat">
-						<h4 class="panel-title">
+						<h3 class="panel-title">
 						  <a class="collapsed" data-toggle="collapse" href="#collapseSat" aria-expanded="false" aria-controls="collapseSat">
 								Saturday, November 19
 								<i class="material-icons expand-more">expand_more</i>
@@ -83,43 +83,61 @@ bodyClass: "dashboard"
 	</section>
 
 	<section id="choose-events" class="gradient-babu-beach">
-		<div class="container">
+		<div class="container dashboard-event-viewer">
 			<div class="dashboard-heading dash-max-width">
 				<h1 class="font-street-markings-clean font-gradient text-uppercase">Choose <br>Events</h1>
 				<p class="lead">Please choose events to fill up your schedule. Then we'll confirm it together for your official schedule.</p>
+				<a href="#" class="btn btn-primary btn-submit-itinerary">Submit Itinerary</a>
 			</div>
 
-			<div id="add-accordion" role="tablist" aria-multiselectable="true">
-				<div class="panel">
-					<div class="panel-heading" role="tab" id="addHeading01">
-						<h4 class="panel-title">
-							<a data-toggle="collapse" href="#addCollapse01" aria-expanded="true" aria-controls="addCollapse01">Keynote Sessions (Choose 2)
-							<i class="material-icons expand-more">expand_more</i>
-						</a>
-						</h4>
-					</div>
-					<div id="addCollapse01" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="addHeading01">
-						{{>tabs-choose}}
-					</div>
-				</div>
-				<div class="panel">
-					<div class="panel-heading" role="tab" id="addHeading02">
-						<h4 class="panel-title">
-						  <a class="collapsed" data-toggle="collapse" href="#addCollapse02" aria-expanded="false" aria-controls="addCollapse02">
-								Activities (Choose 1)
-								<i class="material-icons expand-more">expand_more</i>
-						  </a>
-						</h4>
-					</div>
-					<div id="addCollapse02" class="panel-collapse collapse" role="tabpanel" aria-labelledby="addHeading02">
-						{{>tabs-choose}}
-					</div>
-				</div>
+			<h2 class="lined-heading m-b-3">Keynote Sessions (Choose 2)</h2>
+			<div id="keynote-accordion" class="p-b-3 m-b-3" role="tablist" aria-multiselectable="true">
+				{{#parseJSON '{ "id": "01", "name": "keynote","title": "Activites", "expanded": true }'}}
+					{{>panel}}
+				{{/parseJSON}}
+				{{#parseJSON '{ "id": "02", "name": "keynote","title": "AMEX Open Spotlight", "expanded": false }'}}
+					{{>panel}}
+				{{/parseJSON}}
+				{{#parseJSON '{ "id": "03", "name": "keynote","title": "Info Station", "expanded": false }'}}
+					{{>panel}}
+				{{/parseJSON}}
+				{{#parseJSON '{ "id": "04", "name": "keynote","title": "Presentations", "expanded": false }'}}
+					{{>panel}}
+				{{/parseJSON}}
+				{{#parseJSON '{ "id": "05", "name": "keynote","title": "Talks", "expanded": false }'}}
+					{{>panel}}
+				{{/parseJSON}}
+				{{#parseJSON '{ "id": "06", "name": "keynote","title": "The Belo Awards", "expanded": false }'}}
+					{{>panel}}
+				{{/parseJSON}}
+				{{#parseJSON '{ "id": "07", "name": "keynote","title": "Workshops", "expanded": false }'}}
+					{{>panel}}
+				{{/parseJSON}}
 			</div>
-
-			<p class="text-xs-center">
-				<a href="#" class="btn btn-primary">Submit</a>
-			</p>
+			<h2 class="lined-heading m-b-3">Activities (Choose 1)</h2>
+			<div id="activites-accordion" role="tablist" aria-multiselectable="true">
+				{{#parseJSON '{ "id": "01", "name": "activites", "title": "Activites", "expanded": true }'}}
+					{{>panel}}
+				{{/parseJSON}}
+				{{#parseJSON '{ "id": "02", "name": "activites", "title": "AMEX Open Spotlight", "expanded": false }'}}
+					{{>panel}}
+				{{/parseJSON}}
+				{{#parseJSON '{ "id": "03", "name": "activites", "title": "Info Station", "expanded": false }'}}
+					{{>panel}}
+				{{/parseJSON}}
+				{{#parseJSON '{ "id": "04", "name": "activites", "title": "Presentations", "expanded": false }'}}
+					{{>panel}}
+				{{/parseJSON}}
+				{{#parseJSON '{ "id": "05", "name": "activites", "title": "Talks", "expanded": false }'}}
+					{{>panel}}
+				{{/parseJSON}}
+				{{#parseJSON '{ "id": "06", "name": "activites", "title": "The Belo Awards", "expanded": false }'}}
+					{{>panel}}
+				{{/parseJSON}}
+				{{#parseJSON '{ "id": "07", "name": "activites", "title": "Workshops", "expanded": false }'}}
+					{{>panel}}
+				{{/parseJSON}}
+			</div>
 		</div>
 	</section>
 

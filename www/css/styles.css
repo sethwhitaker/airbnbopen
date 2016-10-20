@@ -4917,17 +4917,17 @@ a.text-danger:focus, a.text-danger:hover {
 }
 
 .gradient-babu-beach .font-gradient {
-  background: -webkit-linear-gradient(135deg, #00D1C1, #FFB400);
-  background: 0-linear-gradient 135deg, #00D1C1, #FFB400;
-  background: linear-gradient(135deg, #00D1C1, #FFB400);
+  background: -webkit-linear-gradient(120deg, #79e7df, #FFB400 80%);
+  background: -moz-linear-gradient(120deg, #79e7df, #FFB400 80%);
+  background: linear-gradient(120deg, #79e7df, #FFB400 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gradient-beach-rausch .font-gradient {
-  background: -webkit-linear-gradient(135deg, #FFB400, #FF5A5F);
-  background: 0-linear-gradient 135deg, #FFB400, #FF5A5F;
-  background: linear-gradient(135deg, #FFB400, #FF5A5F);
+  background: -webkit-linear-gradient(120deg, #ffd266, #FF5A5F);
+  background: -moz-linear-gradient(120deg, #ffd266, #FF5A5F);
+  background: linear-gradient(120deg, #ffd266, #FF5A5F);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -5596,6 +5596,17 @@ body.account .login-panel {
   background: #ffffff;
 }
 
+.lined-heading {
+  font-family: "Circular Air Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  .lined-heading {
+    font-size: 2.75rem;
+  }
+}
+
 .lined-heading:after {
   display: block;
   width: 51px;
@@ -5616,14 +5627,6 @@ body.account .login-panel {
 
 .event-title {
   color: #ffffff;
-  font-family: "Circular Air Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 2rem;
-}
-
-@media (min-width: 768px) {
-  .event-title {
-    font-size: 2.75rem;
-  }
 }
 
 .event-details {
@@ -5799,7 +5802,25 @@ body.account .login-panel {
 }
 
 .dash-max-width {
-  max-width: 440px;
+  max-width: 500px;
+}
+
+.dashboard-event-viewer {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .btn-submit-itinerary {
+    position: absolute;
+    right: 15px;
+    top: 160px;
+  }
+}
+
+@media (min-width: 992px) {
+  .btn-submit-itinerary {
+    right: 60px;
+  }
 }
 
 .nav-tabs-container {
@@ -5846,6 +5867,15 @@ body.account .login-panel {
   }
 }
 
+.panel-sub-heading {
+  font-family: "Circular Air Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px 0 50px;
+  color: #484848;
+}
+
 .panel-title {
   margin: 0;
 }
@@ -5868,16 +5898,16 @@ body.account .login-panel {
 }
 
 .gradient-babu-beach .panel-title a {
-  background: -webkit-linear-gradient(135deg, #00D1C1, #FFB400);
-  background: -o-linear-gradient(135deg, #00D1C1, #FFB400);
-  background: linear-gradient(135deg, #00D1C1, #FFB400);
+  background: -webkit-linear-gradient(120deg, #79e7df, #ffc333);
+  background: -moz-linear-gradient(120deg, #79e7df, #ffc333);
+  background: linear-gradient(120deg, #79e7df, #ffc333);
   background-size: 250%;
 }
 
 .gradient-beach-rausch .panel-title a {
-  background: -webkit-linear-gradient(135deg, #FFB400, #FF5A5F);
-  background: -o-linear-gradient(135deg, #FFB400, #FF5A5F);
-  background: linear-gradient(135deg, #FFB400, #FF5A5F);
+  background: -webkit-linear-gradient(120deg, #ffd266, #FF5A5F);
+  background: -moz-linear-gradient(120deg, #ffd266, #FF5A5F);
+  background: linear-gradient(120deg, #ffd266, #FF5A5F);
   background-size: 250%;
 }
 

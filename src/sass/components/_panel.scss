@@ -5,6 +5,16 @@
 		margin-bottom: 50px;
 	}
 }
+
+.panel-sub-heading{
+	font-family: $font-circular-medium;
+	font-size: 16px;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 20px 0 50px;
+	color: $dark-grey;
+}
+
 .panel-title{
 	margin:0;
 	a{
@@ -20,15 +30,15 @@
       	font-size: 2rem;
 		}
       .gradient-babu-beach &{
-		   background: -webkit-linear-gradient(135deg, $babu, $beach);
-		   background: -o-linear-gradient(135deg, $babu, $beach);
-	      background: linear-gradient(135deg, $babu, $beach);
+		   background: -webkit-linear-gradient(120deg, $babu-70, $beach-80);
+		   background: -moz-linear-gradient(120deg, $babu-70, $beach-80);
+	      background: linear-gradient(120deg, $babu-70, $beach-80);
       	background-size: 250%;
       }
       .gradient-beach-rausch &{
-      	background: -webkit-linear-gradient(135deg, $beach, $rausch);
-		   background: -o-linear-gradient(135deg, $beach, $rausch);
-	      background: linear-gradient(135deg, $beach, $rausch);
+      	background: -webkit-linear-gradient(120deg, $beach-60, $rausch);
+		   background: -moz-linear-gradient(120deg, $beach-60, $rausch);
+	      background: linear-gradient(120deg, $beach-60, $rausch);
       	background-size: 250%;
       }
       &.collapsed{

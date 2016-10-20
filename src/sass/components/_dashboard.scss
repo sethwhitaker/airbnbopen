@@ -56,5 +56,19 @@
 	}
 }
 .dash-max-width{
-	max-width:440px;
+	max-width:500px;
+}
+
+.dashboard-event-viewer{
+	position: relative;
+}
+.btn-submit-itinerary{
+	@include media-breakpoint-up(md) {
+		position: absolute;
+		right:15px;
+		top:160px;
+	}
+	@include media-breakpoint-up(lg) {
+		right:60px;
+	}
 }

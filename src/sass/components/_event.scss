@@ -14,6 +14,11 @@
 }
 
 .lined-heading{
+	font-family: $font-circular-bold;
+	font-size: 2rem;
+	@include media-breakpoint-up(md) {
+		font-size: 2.75rem;
+	}
 	&:after {
 		display: block;
 		width: 51px;
@@ -35,11 +40,11 @@
 
 .event-title{
 	color:$white;
-	font-family: $font-circular-bold;
-	font-size: 2rem;
-	@include media-breakpoint-up(md) {
-		font-size: 2.75rem;
-	}
+	// font-family: $font-circular-bold;
+	// font-size: 2rem;
+	// @include media-breakpoint-up(md) {
+	// 	font-size: 2.75rem;
+	// }
 }
 
 .event-details{
