@@ -4966,17 +4966,16 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
-.dashboard .main,
-.single-event .main,
-.schedule .main {
-  padding-top: 75px;
+.main {
   padding-bottom: 100px;
 }
 
+.has-fixed-nav .main {
+  padding-top: 75px;
+}
+
 @media (min-width: 768px) {
-  .dashboard .main,
-  .single-event .main,
-  .schedule .main {
+  .has-fixed-nav .main {
     padding-top: 98px;
   }
 }
@@ -5007,6 +5006,17 @@ h1, h2, h3, h4, h5, h6,
   background: -moz-linear-gradient(120deg, #7B0051, #52a2aa) top center no-repeat scroll;
   background: linear-gradient(120deg, #7B0051, #52a2aa) top center no-repeat scroll;
   background-size: cover;
+}
+
+.back-arrow {
+  font-size: 50px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  margin-left: -15px;
+}
+
+.back-arrow:hover {
+  color: #f2f2f2;
 }
 
 ::-webkit-input-placeholder {
@@ -5399,6 +5409,10 @@ select:-webkit-autofill:focus {
   }
 }
 
+.header.static {
+  position: static;
+}
+
 .header .button--login {
   position: absolute;
   right: 45px;
@@ -5643,17 +5657,6 @@ body.account .login-panel {
   .event-details {
     font-size: 14px;
   }
-}
-
-.back-arrow {
-  font-size: 50px;
-  color: #ffffff;
-  margin-bottom: 20px;
-  margin-left: -15px;
-}
-
-.back-arrow:hover {
-  color: #f2f2f2;
 }
 
 .event-cta-btn {

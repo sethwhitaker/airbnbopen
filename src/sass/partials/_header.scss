@@ -11,6 +11,9 @@
 			 max-width: 1140px;
 		}
 	}
+	&.static{
+		position: static;
+	}
 	.button--login {
 		position: absolute;
 		right: 45px;

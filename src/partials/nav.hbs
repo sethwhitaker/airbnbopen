@@ -1,4 +1,8 @@
+{{#if staticHeader}}
+<header class="header static">
+{{else}}
 <header class="header">
+{{/if}}
 	<div class="container container-wide">
 		<nav class="navbar row">
 			<div class="header__navbar-header col-xs">
@@ -9,7 +13,7 @@
 			</div>
 		 	<div class="nav-list collapse navbar-toggleable-sm" id="header-navbar">
 		    	<ul class="nav navbar-nav">
-		    		{{#is bodyClass "dashboard"}}
+		    		{{#if isDashboard }}
 		      	<li class="nav-item">
 		        		<a class="nav-link active" href="#view-schedule" data-scroll-to="true" data-scroll-offset="113">Your Schedule</a>
 		      	</li>
@@ -23,7 +27,7 @@
 					<li class="nav-item">
 		        		<a class="nav-link hidden-md-up" href="/schedule.html">Schedule</a>
 		      	</li>
-		      	{{/is}}
+		      	{{/if}}
 		    	</ul>
 		  	</div>
 		   <a class="btn btn-outline-rausch btn-sm button--login" href="/">Logout</a>

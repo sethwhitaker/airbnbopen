@@ -1,22 +1,22 @@
 ---
 title: Account
-layout: login.hbs
-bodyClass: "account gradient-silverlake"
+layout: default.hbs
+bodyClass: "account gradient-santa-monica"
+staticHeader: true
 ---
 
 <main class="main">
 
 	<section class="container">
 
-			<a href="/" class="logo-login"><img src="/img/logo-login.png" alt="Airbnb Open 2016"></a>
-
 			<div class="row flex-items-md-center">
+				<div class="col-md-1">
+					<a class="d-inline-block m-t-3" href="/dashboard.html"><i class="material-icons back-arrow">arrow_back</i></a>
+				</div>
 				<div class="col-md-11">
 					<div class="login-panel">
-
 						<h1 class="login-header font-palace">My Account</h1>
-
-						<form accept-charset="UTF-8" action="/dashboard.html" class="login-form " data-action="Signin" method="post">
+						<form accept-charset="UTF-8" action="/account.html" class="login-form " data-action="Signin" method="post">
 							<div class="form-group">
 								<input autofocus="autofocus" class="decorative-input" id="first_name" name="first_name" placeholder="First Name" type="text">
 							</div>
